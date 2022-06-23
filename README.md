@@ -1,6 +1,6 @@
 ## FCS-adaptor
 Foreign contamination screening (FCS)-adaptor is a VecScreen-based program to detect adaptor contamination in genomic sequences. This tool is one module within a larger NCBI FCS program suite. Please read the [wiki](https://github.com/ncbi/fcs/wiki) for instructions on how to run FCS-adaptor.  
-` `
+
 ## FCS-GX
 Foreign contamination screening (FCS)-GX is a genome-level contamination detecting tool based on a cross-species alignment component called the GX aligner. FCS-GX is one module within a larger NCBI foreign contamination screening program suite.
 
