@@ -1,0 +1,716 @@
+##[["GX taxonomy analysis report",1,1], {"git-rev":"e669f14", "run-date":"Mon Mar 21 16:16:51 2022", "db":{"build-date":"2021-12-20", "seqs":3043, "Gbp":0.28336}}]
+#seq-id	seq-len	masked-len	cvg-by-all	sep1	tax-name-1	tax-id-1	div-1	cvg-by-div-1	cvg-by-tax-1	score-1	sep2	tax-id-2	div-2	cvg-by-div-2	cvg-by-tax-2	score-2	sep3	tax-id-3	div-3	cvg-by-div-3	cvg-by-tax-3	score-3	sep4	tax-id-4	div-4	cvg-by-div-4	cvg-by-tax-4	score-4	sep5	weight	result	div	div_pct_cvg
+JPZV02000012.1	1169662	842	403488	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	403488	134771	735	|	329854	prok|CFB group bacteria	403488	114035	674	|						|						|	4	contaminant	prok|CFB group bacteria	34
+JPZV02000014.1	1402747	0	875454	|	Bacteroides cellulosilyticus	246787	prok|CFB group bacteria	875454	497256	1526	|	28116	prok|CFB group bacteria	875454	468622	1502	|						|						|	4	contaminant	prok|CFB group bacteria	62
+JPZV02000015.1	1147640	0	642697	|	Bacteroides timonensis	1470345	prok|CFB group bacteria	642697	358582	1311	|	246787	prok|CFB group bacteria	642697	353589	1283	|						|						|	4	contaminant	prok|CFB group bacteria	56
+JPZV02000034.1	2160120	272	65739	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	65739	12677	241	|	818	prok|CFB group bacteria	65739	13549	231	|						|						|	4	low-coverage	prok|CFB group bacteria	3
+JPZV02000395.1	5318012	901	3283151	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	3283151	1737802	2993	|	818	prok|CFB group bacteria	3283151	1740994	2951	|						|						|	4	contaminant	prok|CFB group bacteria	62
+JPZV02005859.1	711600	1412	90741	|	Bacteroides caecimuris	1796613	prok|CFB group bacteria	90741	27288	302	|	679937	prok|CFB group bacteria	90741	24644	292	|						|						|	4	low-coverage	prok|CFB group bacteria	13
+JPZV02007201.1	673418	0	376966	|	Bacteroides cellulosilyticus	246787	prok|CFB group bacteria	376966	215300	1010	|	1133319	prok|CFB group bacteria	376966	225467	1009	|						|						|	4	contaminant	prok|CFB group bacteria	56
+JPZV02009577.1	605546	0	237944	|	Bacteroides luhongzhouii	2650158	prok|CFB group bacteria	237944	89383	729	|	1796613	prok|CFB group bacteria	237944	90229	697	|						|						|	4	contaminant	prok|CFB group bacteria	39
+JPZV02016362.1	435737	0	138710	|	Bacteroides cellulosilyticus	246787	prok|CFB group bacteria	138710	53671	454	|	291644	prok|CFB group bacteria	138710	42337	422	|						|						|	4	contaminant	prok|CFB group bacteria	32
+JPZV02021074.1	346423	0	127559	|	Bacteroides uniformis	820	prok|CFB group bacteria	127559	47853	436	|	1236512	prok|CFB group bacteria	127559	45841	411	|						|						|	4	contaminant	prok|CFB group bacteria	37
+JPZV02021377.1	342634	0	229951	|	Bacteroides cellulosilyticus	246787	prok|CFB group bacteria	229951	125673	749	|	820	prok|CFB group bacteria	229951	109510	699	|						|						|	4	contaminant	prok|CFB group bacteria	67
+JPZV02021455.1	339419	0	213219	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	213219	148944	874	|	997884	prok|CFB group bacteria	213219	138572	865	|						|						|	4	contaminant	prok|CFB group bacteria	63
+JPZV02024668.1	278315	0	176304	|	Bacteroides neonati	1347393	prok|CFB group bacteria	176304	117845	1001	|	871324	prok|CFB group bacteria	176304	75646	581	|						|						|	4	contaminant	prok|CFB group bacteria	63
+JPZV02028709.1	214526	0	178751	|	Bacteroides intestinalis	329854	prok|CFB group bacteria	178751	149545	955	|	246787	prok|CFB group bacteria	178751	136657	937	|						|						|	4	contaminant	prok|CFB group bacteria	83
+JPZV02029312.1	205154	0	85516	|	Bacteroides mediterraneensis	1841856	prok|CFB group bacteria	85516	38356	685	|	626931	prok|CFB group bacteria	85516	49702	590	|						|						|	4	contaminant	prok|CFB group bacteria	42
+JPZV02030530.1	183256	0	112807	|	Bacteroides ovatus	28116	prok|CFB group bacteria	112807	82932	648	|	1912894	prok|CFB group bacteria	112807	81901	643	|						|						|	4	contaminant	prok|CFB group bacteria	62
+JPZV02031352.1	172097	0	117187	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	117187	68459	758	|	246787	prok|CFB group bacteria	117187	70214	696	|						|						|	4	contaminant	prok|CFB group bacteria	68
+JPZV02031416.1	171726	0	19082	|	Bacteroides salyersiae	291644	prok|CFB group bacteria	19082	7092	166	|	1347393	prok|CFB group bacteria	19082	7788	166	|						|						|	4	low-coverage	prok|CFB group bacteria	11
+JPZV02032132.1	161951	0	54615	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	54615	21169	291	|	871325	prok|CFB group bacteria	54615	19493	283	|						|						|	4	contaminant	prok|CFB group bacteria	34
+JPZV02033042.1	149609	0	52536	|	Bacteroides kribbi	1912894	prok|CFB group bacteria	52536	23429	287	|	47678	prok|CFB group bacteria	52536	21304	280	|						|						|	4	contaminant	prok|CFB group bacteria	35
+JPZV02034235.1	132033	1049	21872	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	21872	13724	208	|	1462569	prok|CFB group bacteria	21872	12101	189	|						|						|	4	low-coverage	prok|CFB group bacteria	17
+JPZV02037079.1	96133	0	71776	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	71776	59685	561	|	291644	prok|CFB group bacteria	71776	60270	547	|						|						|	4	contaminant	prok|CFB group bacteria	75
+JPZV02037864.1	86436	0	50734	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	50734	32547	658	|	246787	prok|CFB group bacteria	50734	43274	652	|						|						|	4	contaminant	prok|CFB group bacteria	59
+JPZV02037956.1	85137	0	29052	|	Bacteroides faecichinchillae	871325	prok|CFB group bacteria	29052	14708	275	|	1121098	prok|CFB group bacteria	29052	15145	268	|						|						|	4	contaminant	prok|CFB group bacteria	34
+JPZV02042439.1	38421	0	21899	|	Bacteroides koreensis	1912896	prok|CFB group bacteria	21899	12720	209	|	28116	prok|CFB group bacteria	21899	11642	204	|						|						|	4	contaminant	prok|CFB group bacteria	57
+JPZV02043471.1	29982	0	14823	|	Bacteroides neonati	1347393	prok|CFB group bacteria	14823	7003	157	|	28119	prok|CFB group bacteria	14823	7045	150	|						|						|	4	contaminant	prok|CFB group bacteria	49
+JPZV02045013.1	21989	0	9209	|	Bacteroides luti	1297750	prok|CFB group bacteria	9209	7195	168	|	2447885	prok|CFB group bacteria	9209	4747	133	|						|						|	4	contaminant	prok|CFB group bacteria	42
+JPZV02045918.1	15969	0	10806	|	Bacteroides luti	1297750	prok|CFB group bacteria	10806	10189	202	|	1852362	prok|CFB group bacteria	10806	7993	174	|						|						|	4	contaminant	prok|CFB group bacteria	68
+JPZV02046037.1	26922	0	789	|	Bacteroides ilei	1907658	prok|CFB group bacteria	789	651	43	|	1796613	prok|CFB group bacteria	789	626	43	|						|						|	3	low-coverage	prok|CFB group bacteria	3
+JPZV02046333.1	14359	0	2846	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	2846	2181	76	|	1347393	prok|CFB group bacteria	2846	1831	69	|						|						|	4	low-coverage	prok|CFB group bacteria	20
+JPZV02046676.1	13334	0	4340	|	Bacteroides vulgatus ATCC 8482	435590	prok|CFB group bacteria	4340	3081	103	|	1297750	prok|CFB group bacteria	4340	3241	102	|						|						|	4	contaminant	prok|CFB group bacteria	33
+JPZV02047170.1	11809	0	1937	|	Bacteroides massiliensis B84634 = Timone 84634 = DSM 17679 = JCM 13223	1121098	prok|CFB group bacteria	1937	1572	80	|	1796613	prok|CFB group bacteria	1937	1549	73	|						|						|	4	low-coverage	prok|CFB group bacteria	16
+JPZV02048795.1	8630	0	3161	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	3161	1947	83	|	1841855	prok|CFB group bacteria	3161	1964	79	|						|						|	4	contaminant	prok|CFB group bacteria	37
+JPZV02048798.1	9156	0	5472	|	Bacteroides graminisolvens DSM 19988 = JCM 15093	1121097	prok|CFB group bacteria	5472	4779	125	|	246787	prok|CFB group bacteria	5472	4118	114	|						|						|	4	contaminant	prok|CFB group bacteria	60
+JPZV02049278.1	7726	0	2677	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	2677	2444	124	|	693979	prok|CFB group bacteria	2677	2532	98	|						|						|	4	contaminant	prok|CFB group bacteria	35
+JPZV02050244.1	6437	0	1310	|	Bacteroides coprocola DSM 17136	470145	prok|CFB group bacteria	1310	1310	63	|						|						|						|	3	contaminant	prok|CFB group bacteria	20
+JPZV02050332.1	5797	0	1723	|	Bacteroides xylanisolvens	371601	prok|CFB group bacteria	1723	1568	70	|	1133319	prok|CFB group bacteria	1723	700	50	|						|						|	4	contaminant	prok|CFB group bacteria	30
+JPZV02050416.1	6262	0	5668	|	Bacteroides salyersiae	291644	prok|CFB group bacteria	5668	5089	137	|	1852362	prok|CFB group bacteria	5668	4604	133	|						|						|	4	contaminant	prok|CFB group bacteria	91
+JPZV02050750.1	7584	188	4263	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	4263	2705	96	|	246787	prok|CFB group bacteria	4263	2633	96	|						|						|	4	contaminant	prok|CFB group bacteria	56
+JPZV02051323.1	6966	217	2236	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	2236	1337	65	|	820	prok|CFB group bacteria	2236	839	57	|						|						|	4	contaminant	prok|CFB group bacteria	32
+JPZV02051668.1	5282	0	2607	|	Bacteroides kribbi	1912894	prok|CFB group bacteria	2607	1716	65	|	1347393	prok|CFB group bacteria	2607	709	59	|						|						|	4	contaminant	prok|CFB group bacteria	49
+JPZV02051780.1	5207	0	2467	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	2467	2125	95	|	1297750	prok|CFB group bacteria	2467	1848	86	|						|						|	4	contaminant	prok|CFB group bacteria	47
+JPZV02052012.1	5048	0	3406	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	3406	2676	126	|	1121097	prok|CFB group bacteria	3406	2439	124	|						|						|	4	contaminant	prok|CFB group bacteria	67
+JPZV02052228.1	4868	0	1742	|	Bacteroides pyogenes	310300	prok|CFB group bacteria	1742	1189	65	|	997884	prok|CFB group bacteria	1742	1272	64	|						|						|	4	contaminant	prok|CFB group bacteria	36
+JPZV02052948.1	4166	0	1150	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	1150	834	89	|	871325	prok|CFB group bacteria	1150	168	35	|						|						|	4	contaminant	prok|CFB group bacteria	28
+JPZV02053060.1	4065	0	1112	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	1112	814	63	|	435590	prok|CFB group bacteria	1112	697	63	|						|						|	4	contaminant	prok|CFB group bacteria	27
+JPZV02053072.1	4062	0	1142	|	Bacteroides luhongzhouii	2650158	prok|CFB group bacteria	1142	977	66	|	871325	prok|CFB group bacteria	1142	963	63	|						|						|	4	contaminant	prok|CFB group bacteria	28
+JPZV02053472.1	3830	0	1100	|	Bacteroides dorei CL03T12C01	997877	prok|CFB group bacteria	1100	711	55	|	1462571	prok|CFB group bacteria	1100	369	46	|						|						|	4	contaminant	prok|CFB group bacteria	29
+JPZV02053781.1	3681	0	1066	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	1066	1066	57	|						|						|						|	3	contaminant	prok|CFB group bacteria	29
+JPZV02055248.1	2870	0	2376	|	Bacteroides propionicifaciens DSM 19291 = JCM 14649	1121099	prok|CFB group bacteria	2376	2291	179	|	47678	prok|CFB group bacteria	2376	1949	110	|						|						|	4	contaminant	prok|CFB group bacteria	83
+JPZV02055392.1	2676	0	2197	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	2197	2161	97	|	626931	prok|CFB group bacteria	2197	2045	88	|						|						|	4	contaminant	prok|CFB group bacteria	82
+JPZV02055623.1	2433	0	1925	|	Bacteroides caecimuris	1796613	prok|CFB group bacteria	1925	1403	65	|	2447885	prok|CFB group bacteria	1925	1055	57	|						|						|	4	contaminant	prok|CFB group bacteria	79
+JPZV02055786.1	2282	0	1399	|	Bacteroides coprosuis DSM 18011	679937	prok|CFB group bacteria	1399	1283	76	|	371601	prok|CFB group bacteria	1399	1147	71	|						|						|	4	contaminant	prok|CFB group bacteria	61
+JPZV02055793.1	2273	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02055797.1	2270	0	1537	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	1537	1517	86	|	1121097	prok|CFB group bacteria	1537	1414	83	|						|						|	4	contaminant	prok|CFB group bacteria	68
+JPZV02056010.1	2127	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02056251.1	2001	0	1133	|	Bacteroides fluxus YIT 12057	763034	prok|CFB group bacteria	1133	1102	70	|	329854	prok|CFB group bacteria	1133	31	8	|						|						|	3	contaminant	prok|CFB group bacteria	57
+JPZV02056270.1	1993	0	1723	|	Bacteroides ihuae	1852362	prok|CFB group bacteria	1723	1723	97	|						|						|						|	3	contaminant	prok|CFB group bacteria	86
+JPZV02056478.1	1896	0	734	|	Bacteroides luti	1297750	prok|CFB group bacteria	734	710	50	|	626931	prok|CFB group bacteria	734	652	46	|						|						|	4	contaminant	prok|CFB group bacteria	39
+JPZV02056542.1	1867	0	261	|	Bacteroides cutis	2024197	prok|CFB group bacteria	261	212	25	|	1121094	prok|CFB group bacteria	261	245	23	|						|						|	0	inconclusive	none	0
+JPZV02056598.1	1844	0	1493	|	Bacteroides coprocola DSM 17136	470145	prok|CFB group bacteria	1493	1337	74	|	2447885	prok|CFB group bacteria	1493	1092	72	|						|						|	4	contaminant	prok|CFB group bacteria	81
+JPZV02056772.1	1780	0	359	|	Bacteroides cutis	2024197	prok|CFB group bacteria	359	317	40	|	2650158	prok|CFB group bacteria	359	346	39	|						|						|	3	contaminant	prok|CFB group bacteria	20
+JPZV02057077.1	1681	0	1627	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	1627	1205	70	|	2650158	prok|CFB group bacteria	1627	1290	70	|						|						|	4	contaminant	prok|CFB group bacteria	97
+JPZV02057117.1	1670	0	1051	|	Bacteroides caccae	47678	prok|CFB group bacteria	1051	871	61	|	679937	prok|CFB group bacteria	1051	881	60	|						|						|	4	contaminant	prok|CFB group bacteria	63
+JPZV02057165.1	1659	0	1656	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	1656	1518	86	|	1411144	prok|CFB group bacteria	1656	1559	83	|						|						|	4	contaminant	prok|CFB group bacteria	100
+JPZV02057224.1	1644	0	1341	|	Bacteroides intestinalis	329854	prok|CFB group bacteria	1341	696	53	|	626931	prok|CFB group bacteria	1341	699	51	|						|						|	4	contaminant	prok|CFB group bacteria	82
+JPZV02057249.1	1637	0	1571	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	1571	1549	77	|	1796613	prok|CFB group bacteria	1571	1467	71	|						|						|	4	contaminant	prok|CFB group bacteria	96
+JPZV02057253.1	1644	0	1642	|	Bacteroides uniformis	820	prok|CFB group bacteria	1642	1625	89	|	1903262	prok|CFB group bacteria	1642	1236	80	|						|						|	4	contaminant	prok|CFB group bacteria	100
+JPZV02057332.1	1611	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02057549.1	1563	0	1552	|	Bacteroides finegoldii	338188	prok|CFB group bacteria	1552	1519	90	|	1841855	prok|CFB group bacteria	1552	1533	89	|						|						|	4	contaminant	prok|CFB group bacteria	99
+JPZV02057758.1	1481	0	1214	|	Bacteroides congonensis	1871006	prok|CFB group bacteria	1214	1214	65	|	1133319	prok|CFB group bacteria	1214	1193	65	|						|						|	4	contaminant	prok|CFB group bacteria	82
+JPZV02057881.1	1488	0	845	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	845	696	45	|	1077285	prok|CFB group bacteria	845	772	45	|						|						|	3	contaminant	prok|CFB group bacteria	57
+JPZV02058150.1	1437	0	580	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	580	480	53	|	1121097	prok|CFB group bacteria	580	423	47	|						|						|	4	contaminant	prok|CFB group bacteria	40
+JPZV02058165.1	1401	0	1376	|	Bacteroides intestinalis	329854	prok|CFB group bacteria	1376	1164	65	|	28119	prok|CFB group bacteria	1376	1297	63	|						|						|	4	contaminant	prok|CFB group bacteria	98
+JPZV02058383.1	1395	0	1243	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	1243	1057	65	|	997884	prok|CFB group bacteria	1243	768	64	|						|						|	4	contaminant	prok|CFB group bacteria	89
+JPZV02058434.1	1386	0	952	|	Bacteroides luti	1297750	prok|CFB group bacteria	952	911	60	|	46506	prok|CFB group bacteria	952	878	60	|						|						|	4	contaminant	prok|CFB group bacteria	69
+JPZV02058449.1	1384	0	514	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	514	461	46	|	1912894	prok|CFB group bacteria	514	426	44	|						|						|	3	contaminant	prok|CFB group bacteria	37
+JPZV02058594.1	1357	0	1354	|	Bacteroides graminisolvens DSM 19988 = JCM 15093	1121097	prok|CFB group bacteria	1354	1027	59	|	2650158	prok|CFB group bacteria	1354	1000	57	|						|						|	4	contaminant	prok|CFB group bacteria	100
+JPZV02058715.1	1336	0	1287	|	Bacteroides coprosuis DSM 18011	679937	prok|CFB group bacteria	1287	994	143	|	1871006	prok|CFB group bacteria	1287	1036	129	|						|						|	4	contaminant	prok|CFB group bacteria	96
+JPZV02058837.1	1316	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02058858.1	1314	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02058908.1	1305	0	1302	|	Bacteroides caecigallinarum	1411144	prok|CFB group bacteria	1302	1238	63	|	1912894	prok|CFB group bacteria	1302	1275	61	|						|						|	4	contaminant	prok|CFB group bacteria	100
+JPZV02059243.1	953	0	921	|	Bacteroides vulgatus ATCC 8482	435590	prok|CFB group bacteria	921	657	153	|	1133319	prok|CFB group bacteria	921	698	145	|						|						|	4	contaminant	prok|CFB group bacteria	97
+JPZV02059511.1	1224	0	707	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	707	303	40	|	818	prok|CFB group bacteria	707	270	37	|						|						|	3	contaminant	prok|CFB group bacteria	58
+JPZV02059521.1	1222	0	1071	|	Bacteroides xylanisolvens	371601	prok|CFB group bacteria	1071	861	56	|	1133319	prok|CFB group bacteria	1071	962	56	|						|						|	4	contaminant	prok|CFB group bacteria	88
+JPZV02059776.1	1192	0	1118	|	Bacteroides heparinolyticus	28113	prok|CFB group bacteria	1118	1049	54	|	1796613	prok|CFB group bacteria	1118	458	45	|						|						|	4	contaminant	prok|CFB group bacteria	94
+JPZV02060104.1	1154	0	227	|	Bacteroides togonis	1917883	prok|CFB group bacteria	227	126	85	|	1297750	prok|CFB group bacteria	227	144	84	|						|						|	4	low-coverage	prok|CFB group bacteria	20
+JPZV02060309.1	1130	0	855	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	855	614	88	|	818	prok|CFB group bacteria	855	698	86	|						|						|	4	contaminant	prok|CFB group bacteria	76
+JPZV02060328.1	1128	0	1082	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	1082	1052	67	|	1236498	prok|CFB group bacteria	1082	529	46	|						|						|	4	contaminant	prok|CFB group bacteria	96
+JPZV02060407.1	1118	0	552	|	Bacteroides congonensis	1871006	prok|CFB group bacteria	552	529	42	|	871325	prok|CFB group bacteria	552	511	40	|						|						|	3	contaminant	prok|CFB group bacteria	49
+JPZV02060414.1	1118	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02060468.1	1111	0	279	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	279	279	37	|						|						|						|	2	inconclusive	prok|CFB group bacteria	25
+JPZV02060701.1	1082	0	925	|	Bacteroides intestinalis	329854	prok|CFB group bacteria	925	925	51	|						|						|						|	3	contaminant	prok|CFB group bacteria	85
+JPZV02060783.1	1074	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02060912.1	1058	0	1031	|	Bacteroides caccae	47678	prok|CFB group bacteria	1031	801	93	|	2715212	prok|CFB group bacteria	1031	942	89	|						|						|	4	contaminant	prok|CFB group bacteria	97
+JPZV02060923.1	1057	0	750	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	750	646	50	|	47678	prok|CFB group bacteria	750	737	49	|						|						|	4	contaminant	prok|CFB group bacteria	71
+JPZV02060953.1	1054	0	1033	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	1033	1007	59	|	1841855	prok|CFB group bacteria	1033	1024	57	|						|						|	4	contaminant	prok|CFB group bacteria	98
+JPZV02061009.1	1046	0	960	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	960	876	66	|	1841855	prok|CFB group bacteria	960	878	65	|						|						|	4	contaminant	prok|CFB group bacteria	92
+JPZV02061381.1	1002	0	450	|	Bacteroides caecigallinarum	1411144	prok|CFB group bacteria	450	389	44	|	2650157	prok|CFB group bacteria	450	305	35	|						|						|	3	contaminant	prok|CFB group bacteria	45
+JPZV02061406.1	1000	185	580	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	580	580	44	|	871324	prok|CFB group bacteria	580	572	44	|						|						|	4	contaminant	prok|CFB group bacteria	58
+JPZV02061447.1	961	0	614	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	614	404	53	|	1907658	prok|CFB group bacteria	614	434	50	|						|						|	4	contaminant	prok|CFB group bacteria	64
+JPZV02061517.1	986	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02061559.1	981	0	330	|	Bacteroides intestinalis	329854	prok|CFB group bacteria	330	294	36	|	626931	prok|CFB group bacteria	330	238	33	|						|						|	3	contaminant	prok|CFB group bacteria	34
+JPZV02061968.1	929	0	870	|	Bacteroides luhongzhouii	2650158	prok|CFB group bacteria	870	820	57	|	1912894	prok|CFB group bacteria	870	816	56	|						|						|	4	contaminant	prok|CFB group bacteria	94
+JPZV02062063.1	919	0	590	|	Bacteroides stercoris	46506	prok|CFB group bacteria	590	534	47	|	338188	prok|CFB group bacteria	590	534	47	|						|						|	3	contaminant	prok|CFB group bacteria	64
+JPZV02062142.1	909	0	310	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	310	303	35	|	1796613	prok|CFB group bacteria	310	294	32	|						|						|	3	contaminant	prok|CFB group bacteria	34
+JPZV02062273.1	892	0	886	|	Bacteroides zoogleoformans	28119	prok|CFB group bacteria	886	832	47	|	1912894	prok|CFB group bacteria	886	818	46	|						|						|	4	contaminant	prok|CFB group bacteria	99
+JPZV02062342.1	884	0	677	|	Bacteroides luti	1297750	prok|CFB group bacteria	677	391	47	|	1347393	prok|CFB group bacteria	677	377	45	|						|						|	4	contaminant	prok|CFB group bacteria	77
+JPZV02062380.1	879	0	723	|	Bacteroides caecigallinarum	1411144	prok|CFB group bacteria	723	673	41	|	1841856	prok|CFB group bacteria	723	508	37	|						|						|	4	contaminant	prok|CFB group bacteria	82
+JPZV02062773.1	840	0	562	|	Bacteroides intestinalis	329854	prok|CFB group bacteria	562	468	44	|	1470345	prok|CFB group bacteria	562	474	42	|						|						|	4	contaminant	prok|CFB group bacteria	67
+JPZV02062942.1	824	0	762	|	Bacteroides caecimuris	1796613	prok|CFB group bacteria	762	271	36	|	1077285	prok|CFB group bacteria	762	481	36	|						|						|	3	contaminant	prok|CFB group bacteria	92
+JPZV02063374.1	784	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02063554.1	770	0	558	|	Bacteroides faecichinchillae	871325	prok|CFB group bacteria	558	463	51	|	1462571	prok|CFB group bacteria	558	440	50	|						|						|	4	contaminant	prok|CFB group bacteria	72
+JPZV02063906.1	743	0	624	|	Bacteroides finegoldii	338188	prok|CFB group bacteria	624	587	50	|	371601	prok|CFB group bacteria	624	572	50	|						|						|	4	contaminant	prok|CFB group bacteria	84
+JPZV02063975.1	736	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02064052.1	729	0	275	|	Bacteroides barnesiae DSM 18169 = JCM 13652	1121094	prok|CFB group bacteria	275	275	36	|						|						|						|	2	inconclusive	prok|CFB group bacteria	38
+JPZV02064272.1	712	0	648	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	648	648	50	|						|						|						|	3	contaminant	prok|CFB group bacteria	91
+JPZV02064309.1	709	0	374	|	Bacteroides faecichinchillae	871325	prok|CFB group bacteria	374	339	48	|	1841855	prok|CFB group bacteria	374	332	47	|						|						|	3	contaminant	prok|CFB group bacteria	53
+JPZV02064377.1	702	0	487	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	487	471	40	|	818	prok|CFB group bacteria	487	487	39	|						|						|	4	contaminant	prok|CFB group bacteria	69
+JPZV02064648.1	680	0	516	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	516	477	41	|	818	prok|CFB group bacteria	516	449	38	|						|						|	4	contaminant	prok|CFB group bacteria	76
+JPZV02064661.1	679	0	505	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	505	487	66	|	371601	prok|CFB group bacteria	505	487	65	|						|						|	4	contaminant	prok|CFB group bacteria	74
+JPZV02064666.1	679	0	260	|	Bacteroides ovatus	28116	prok|CFB group bacteria	260	260	37	|						|						|						|	2	inconclusive	prok|CFB group bacteria	38
+JPZV02064850.1	666	0	218	|	Bacteroides heparinolyticus	28113	prok|CFB group bacteria	218	218	30	|						|						|						|	2	inconclusive	prok|CFB group bacteria	33
+JPZV02064860.1	665	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02064921.1	660	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02065047.1	651	0	624	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	624	433	96	|	85831	prok|CFB group bacteria	624	414	95	|						|						|	4	contaminant	prok|CFB group bacteria	96
+JPZV02065156.1	643	0	407	|	Bacteroides sp. CBA7301	2715212	prok|CFB group bacteria	407	407	40	|						|						|						|	2	inconclusive	prok|CFB group bacteria	63
+JPZV02065445.1	623	0	611	|	Bacteroides ovatus	28116	prok|CFB group bacteria	611	454	108	|	2650157	prok|CFB group bacteria	611	479	105	|						|						|	4	contaminant	prok|CFB group bacteria	98
+JPZV02065657.1	608	0	592	|	Bacteroides ovatus	28116	prok|CFB group bacteria	592	575	44	|	371601	prok|CFB group bacteria	592	535	43	|						|						|	4	contaminant	prok|CFB group bacteria	97
+JPZV02065968.1	586	0	581	|	Bacteroides intestinalis	329854	prok|CFB group bacteria	581	581	48	|	1470345	prok|CFB group bacteria	581	581	46	|						|						|	4	contaminant	prok|CFB group bacteria	99
+JPZV02066010.1	583	0	357	|	Bacteroides eggerthii	28111	prok|CFB group bacteria	357	237	38	|	2650157	prok|CFB group bacteria	357	298	33	|						|						|	3	contaminant	prok|CFB group bacteria	61
+JPZV02066085.1	578	0	388	|	Bacteroides stercorirosoris	871324	prok|CFB group bacteria	388	381	41	|	997884	prok|CFB group bacteria	388	340	39	|						|						|	4	contaminant	prok|CFB group bacteria	67
+JPZV02066263.1	567	0	189	|	Bacteroides faecichinchillae	871325	prok|CFB group bacteria	189	189	32	|						|						|						|	2	inconclusive	prok|CFB group bacteria	33
+JPZV02066346.1	562	0	560	|	Bacteroides finegoldii	338188	prok|CFB group bacteria	560	560	46	|						|						|						|	3	contaminant	prok|CFB group bacteria	100
+JPZV02066486.1	553	0	492	|	Bacteroides intestinalis	329854	prok|CFB group bacteria	492	489	55	|	626931	prok|CFB group bacteria	492	492	53	|						|						|	4	contaminant	prok|CFB group bacteria	89
+JPZV02066490.1	553	0	541	|	Bacteroides luhongzhouii	2650158	prok|CFB group bacteria	541	453	48	|	997877	prok|CFB group bacteria	541	534	47	|						|						|	4	contaminant	prok|CFB group bacteria	98
+JPZV02066508.1	552	0	531	|	Bacteroides graminisolvens DSM 19988 = JCM 15093	1121097	prok|CFB group bacteria	531	527	48	|	1852362	prok|CFB group bacteria	531	398	35	|						|						|	4	contaminant	prok|CFB group bacteria	96
+JPZV02066607.1	546	0	536	|	Bacteroides acidifaciens	85831	prok|CFB group bacteria	536	413	110	|	1121098	prok|CFB group bacteria	536	433	96	|						|						|	4	contaminant	prok|CFB group bacteria	98
+JPZV02066634.1	545	0	401	|	Bacteroides stercorirosoris	871324	prok|CFB group bacteria	401	194	35	|	997884	prok|CFB group bacteria	401	222	28	|						|						|	4	contaminant	prok|CFB group bacteria	74
+JPZV02066642.1	544	0	484	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	484	484	41	|						|						|						|	3	contaminant	prok|CFB group bacteria	89
+JPZV02066648.1	544	0	294	|	Bacteroides ihuae	1852362	prok|CFB group bacteria	294	294	32	|						|						|						|	2	inconclusive	prok|CFB group bacteria	54
+JPZV02066931.1	528	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02067384.1	503	0	272	|	Bacteroides ovatus	28116	prok|CFB group bacteria	272	264	37	|	763034	prok|CFB group bacteria	272	272	36	|						|						|	3	contaminant	prok|CFB group bacteria	54
+JPZV02067447.1	499	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02067554.1	492	0	87	|	Bacteroides gallinarum DSM 18171 = JCM 13658	1121096	prok|CFB group bacteria	87	87	13	|						|						|						|	0	inconclusive	none	0
+JPZV02067746.1	480	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02068516.1	437	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02068595.1	433	0	343	|	Bacteroides neonati	1347393	prok|CFB group bacteria	343	226	36	|	1297750	prok|CFB group bacteria	343	193	31	|						|						|	4	contaminant	prok|CFB group bacteria	79
+JPZV02068609.1	432	0	410	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	410	409	45	|	626931	prok|CFB group bacteria	410	410	41	|						|						|	4	contaminant	prok|CFB group bacteria	95
+JPZV02069176.1	405	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02069633.1	382	0	248	|	Bacteroides massiliensis B84634 = Timone 84634 = DSM 17679 = JCM 13223	1121098	prok|CFB group bacteria	248	248	56	|	1852362	prok|CFB group bacteria	248	248	55	|						|						|	4	contaminant	prok|CFB group bacteria	65
+JPZV02069644.1	381	0	216	|	Bacteroides ihuae	1852362	prok|CFB group bacteria	216	147	34	|	2650158	prok|CFB group bacteria	216	176	30	|						|						|	3	contaminant	prok|CFB group bacteria	57
+JPZV02069887.1	369	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02070240.1	353	0	337	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	337	274	37	|	1852362	prok|CFB group bacteria	337	317	36	|						|						|	4	contaminant	prok|CFB group bacteria	95
+JPZV02070819.1	328	0	326	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	326	326	41	|						|						|						|	3	contaminant	prok|CFB group bacteria	99
+JPZV02071203.1	313	0	204	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	204	191	88	|	1903262	prok|CFB group bacteria	204	197	87	|						|						|	4	contaminant	prok|CFB group bacteria	65
+JPZV02071313.1	309	0	0	|							|						|						|						|	0	inconclusive	none	0
+JPZV02071322.1	274	0	273	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	273	273	29	|						|						|						|	3	contaminant	prok|CFB group bacteria	100
+JPZV02071465.1	302	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ614361.1~1..2141827	2141827	69	634465	|	Bacteroides caecimuris	1796613	prok|CFB group bacteria	634465	196483	888	|	818	prok|CFB group bacteria	634465	200533	878	|						|						|	4	contaminant	prok|CFB group bacteria	30
+KZ614361.1~2142167..2329065	186899	0	67111	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	67111	40639	455	|	291644	prok|CFB group bacteria	67111	25842	325	|						|						|	4	contaminant	prok|CFB group bacteria	36
+KZ614361.1~2329360..2393435	64076	0	13009	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	13009	7950	209	|	818	prok|CFB group bacteria	13009	5757	146	|						|						|	4	contaminant	prok|CFB group bacteria	20
+KZ614361.1~2393547..2402111	8565	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ614451.1~1..83723	83723	0	33219	|	Bacteroides vulgatus ATCC 8482	435590	prok|CFB group bacteria	33219	16740	266	|	997877	prok|CFB group bacteria	33219	15218	253	|						|						|	4	contaminant	prok|CFB group bacteria	40
+KZ614451.1~85371..199474	114104	0	68627	|	Bacteroides vulgatus ATCC 8482	435590	prok|CFB group bacteria	68627	40211	393	|	997877	prok|CFB group bacteria	68627	39291	389	|						|						|	4	contaminant	prok|CFB group bacteria	60
+KZ614451.1~199485..205840	6356	0	3983	|	Bacteroides vulgatus ATCC 8482	435590	prok|CFB group bacteria	3983	2462	106	|	997877	prok|CFB group bacteria	3983	2490	104	|						|						|	4	contaminant	prok|CFB group bacteria	63
+KZ614451.1~206273..240941	34669	0	18440	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	18440	16767	256	|	763034	prok|CFB group bacteria	18440	12524	215	|						|						|	4	contaminant	prok|CFB group bacteria	53
+KZ614451.1~240955..280369	39415	0	29146	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	29146	19615	285	|	1852362	prok|CFB group bacteria	29146	15520	234	|						|						|	4	contaminant	prok|CFB group bacteria	74
+KZ614451.1~281149..414185	133037	0	62636	|	Bacteroides koreensis	1912896	prok|CFB group bacteria	62636	27521	330	|	1912894	prok|CFB group bacteria	62636	27267	329	|						|						|	4	contaminant	prok|CFB group bacteria	47
+KZ614451.1~414615..450384	35770	0	16119	|	Bacteroides uniformis	820	prok|CFB group bacteria	16119	11742	213	|	1121096	prok|CFB group bacteria	16119	10562	197	|						|						|	4	contaminant	prok|CFB group bacteria	45
+KZ614451.1~450440..468778	18339	0	10347	|	Bacteroides cellulosilyticus	246787	prok|CFB group bacteria	10347	4461	142	|	28116	prok|CFB group bacteria	10347	4936	142	|						|						|	4	contaminant	prok|CFB group bacteria	56
+KZ614451.1~469742..713811	244070	126	108867	|	Bacteroides zhangwenhongi	2650157	prok|CFB group bacteria	108867	62875	503	|	2650158	prok|CFB group bacteria	108867	56909	485	|						|						|	4	contaminant	prok|CFB group bacteria	45
+KZ614451.1~714001..720828	6828	0	14	|	Bacteroides massiliensis B84634 = Timone 84634 = DSM 17679 = JCM 13223	1121098	prok|CFB group bacteria	14	14	4	|						|						|						|	0	inconclusive	none	0
+KZ614451.1~721466..737263	15798	0	631	|	Bacteroides clarus	626929	prok|CFB group bacteria	631	617	47	|	329854	prok|CFB group bacteria	631	534	46	|						|						|	3	low-coverage	prok|CFB group bacteria	4
+KZ614451.1~737296..742207	4912	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ614451.1~743141..845532	102392	0	36256	|	Bacteroides helcogenes P 36-108	693979	prok|CFB group bacteria	36256	23615	288	|	246787	prok|CFB group bacteria	36256	21552	280	|						|						|	4	contaminant	prok|CFB group bacteria	35
+KZ614451.1~846132..854827	8696	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ614605.1~1..115167	115167	0	36318	|	Bacteroides uniformis	820	prok|CFB group bacteria	36318	21712	277	|	1133319	prok|CFB group bacteria	36318	17260	261	|						|						|	4	contaminant	prok|CFB group bacteria	32
+KZ614605.1~115356..939154	823799	458	242011	|	Bacteroides salyersiae	291644	prok|CFB group bacteria	242011	85544	564	|	435590	prok|CFB group bacteria	242011	84658	556	|						|						|	4	contaminant	prok|CFB group bacteria	29
+KZ614605.1~939753..979961	40209	0	25376	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	25376	15428	237	|	338188	prok|CFB group bacteria	25376	14575	227	|						|						|	4	contaminant	prok|CFB group bacteria	63
+KZ614605.1~980451..1229510	249060	0	112712	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	112712	65780	524	|	1841855	prok|CFB group bacteria	112712	66288	513	|						|						|	4	contaminant	prok|CFB group bacteria	45
+KZ614605.1~1229616..1403084	173469	0	88528	|	Bacteroides fluxus YIT 12057	763034	prok|CFB group bacteria	88528	46679	414	|	2650158	prok|CFB group bacteria	88528	37010	392	|						|						|	4	contaminant	prok|CFB group bacteria	51
+KZ614605.1~1403758..1408683	4926	0	1267	|	Bacteroides luti	1297750	prok|CFB group bacteria	1267	1001	71	|	1852362	prok|CFB group bacteria	1267	1095	71	|						|						|	4	contaminant	prok|CFB group bacteria	26
+KZ614777.1~1..182565	182565	0	58993	|	Bacteroides rodentium JCM 16496	1236512	prok|CFB group bacteria	58993	17135	270	|	763034	prok|CFB group bacteria	58993	14469	263	|						|						|	4	contaminant	prok|CFB group bacteria	32
+KZ614777.1~183252..624228	440977	0	181994	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	181994	66272	505	|	2650158	prok|CFB group bacteria	181994	52519	457	|						|						|	4	contaminant	prok|CFB group bacteria	41
+KZ615066.1~1..2290	2290	0	1891	|	Bacteroides timonensis	1470345	prok|CFB group bacteria	1891	1882	88	|	1133319	prok|CFB group bacteria	1891	807	52	|						|						|	4	contaminant	prok|CFB group bacteria	83
+KZ615066.1~3200..6313	3114	0	765	|	Bacteroides dorei CL03T12C01	997877	prok|CFB group bacteria	765	649	53	|	1917883	prok|CFB group bacteria	765	583	53	|						|						|	4	contaminant	prok|CFB group bacteria	25
+KZ615066.1~6924..55259	48336	0	15317	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	15317	9433	206	|	291644	prok|CFB group bacteria	15317	7917	187	|						|						|	4	contaminant	prok|CFB group bacteria	32
+KZ615066.1~55349..343602	288254	0	75784	|	Bacteroides neonati	1347393	prok|CFB group bacteria	75784	33331	368	|	1871006	prok|CFB group bacteria	75784	30754	348	|						|						|	4	contaminant	prok|CFB group bacteria	26
+KZ615066.1~343817..502399	158583	0	53304	|	Bacteroides luhongzhouii	2650158	prok|CFB group bacteria	53304	28319	329	|	1121097	prok|CFB group bacteria	53304	27959	327	|						|						|	4	contaminant	prok|CFB group bacteria	34
+KZ615085.1~1..342184	342184	227	136751	|	Bacteroides luhongzhouii	2650158	prok|CFB group bacteria	136751	59421	512	|	1796613	prok|CFB group bacteria	136751	59859	508	|						|						|	4	contaminant	prok|CFB group bacteria	40
+KZ615085.1~342391..491033	148643	0	44073	|	Bacteroides ovatus	28116	prok|CFB group bacteria	44073	16781	451	|	2447885	prok|CFB group bacteria	44073	15310	433	|						|						|	4	contaminant	prok|CFB group bacteria	30
+KZ615112.1~1..337497	337497	90	208043	|	Bacteroides cellulosilyticus	246787	prok|CFB group bacteria	208043	128930	760	|	871324	prok|CFB group bacteria	208043	123203	753	|						|						|	4	contaminant	prok|CFB group bacteria	62
+KZ615112.1~339129..417955	78827	0	38794	|	Bacteroides sp. CBA7301	2715212	prok|CFB group bacteria	38794	21986	275	|	818	prok|CFB group bacteria	38794	14151	228	|						|						|	4	contaminant	prok|CFB group bacteria	49
+KZ615112.1~418421..482366	63946	0	27061	|	Bacteroides zhangwenhongi	2650157	prok|CFB group bacteria	27061	9489	179	|	1121099	prok|CFB group bacteria	27061	5414	151	|						|						|	4	contaminant	prok|CFB group bacteria	42
+KZ615263.1~1..292452	292452	0	115824	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	115824	59338	479	|	997884	prok|CFB group bacteria	115824	48420	435	|						|						|	4	contaminant	prok|CFB group bacteria	40
+KZ615263.1~292524..435266	142743	0	46371	|	Bacteroides vulgatus ATCC 8482	435590	prok|CFB group bacteria	46371	22571	291	|	1852362	prok|CFB group bacteria	46371	22006	273	|						|						|	4	contaminant	prok|CFB group bacteria	32
+KZ615643.1~1..69302	69302	215	21348	|	Bacteroides ndongoniae	1903262	prok|CFB group bacteria	21348	9663	182	|	1121099	prok|CFB group bacteria	21348	7937	172	|						|						|	4	contaminant	prok|CFB group bacteria	31
+KZ615643.1~69737..133852	64116	0	23999	|	Bacteroides massiliensis B84634 = Timone 84634 = DSM 17679 = JCM 13223	1121098	prok|CFB group bacteria	23999	15209	232	|	997884	prok|CFB group bacteria	23999	13142	222	|						|						|	4	contaminant	prok|CFB group bacteria	37
+KZ615643.1~134311..266518	132208	200	44008	|	Bacteroides dorei CL03T12C01	997877	prok|CFB group bacteria	44008	22178	277	|	818	prok|CFB group bacteria	44008	19563	260	|						|						|	4	contaminant	prok|CFB group bacteria	33
+KZ615643.1~266703..428808	162106	0	39049	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	39049	9352	195	|	1841855	prok|CFB group bacteria	39049	8184	174	|						|						|	4	contaminant	prok|CFB group bacteria	24
+KZ615643.1~429549..467485	37937	0	10865	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	10865	6348	175	|	329854	prok|CFB group bacteria	10865	4908	164	|						|						|	4	contaminant	prok|CFB group bacteria	29
+KZ615643.1~467983..550106	82124	0	28925	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	28925	16804	237	|	2024197	prok|CFB group bacteria	28925	14330	220	|						|						|	4	contaminant	prok|CFB group bacteria	35
+KZ615710.1~1..95599	95599	216	39383	|	Bacteroides caecimuris	1796613	prok|CFB group bacteria	39383	28378	376	|	47678	prok|CFB group bacteria	39383	25612	347	|						|						|	4	contaminant	prok|CFB group bacteria	41
+KZ615710.1~95695..164588	68894	0	38662	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	38662	26600	338	|	818	prok|CFB group bacteria	38662	25471	330	|						|						|	4	contaminant	prok|CFB group bacteria	56
+KZ615710.1~164880..410302	245423	0	102007	|	Bacteroides caecimuris	1796613	prok|CFB group bacteria	102007	44178	410	|	871324	prok|CFB group bacteria	102007	42235	391	|						|						|	4	contaminant	prok|CFB group bacteria	42
+KZ615744.1~1..18262	18262	0	2417	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	2417	2177	92	|	2024197	prok|CFB group bacteria	2417	1253	65	|						|						|	4	low-coverage	prok|CFB group bacteria	13
+KZ615744.1~18918..46100	27183	0	8951	|	Bacteroides stercorirosoris	871324	prok|CFB group bacteria	8951	2402	95	|	1841855	prok|CFB group bacteria	8951	2474	94	|						|						|	4	contaminant	prok|CFB group bacteria	33
+KZ615744.1~46238..251134	204897	0	75542	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	75542	34708	546	|	2447885	prok|CFB group bacteria	75542	25450	495	|						|						|	4	contaminant	prok|CFB group bacteria	37
+KZ615744.1~251173..327095	75923	0	43217	|	Bacteroides cellulosilyticus	246787	prok|CFB group bacteria	43217	20521	264	|	871324	prok|CFB group bacteria	43217	19903	264	|						|						|	4	contaminant	prok|CFB group bacteria	57
+KZ616366.1~1..196631	196631	0	92581	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	92581	56166	524	|	871325	prok|CFB group bacteria	92581	51975	504	|						|						|	4	contaminant	prok|CFB group bacteria	47
+KZ616366.1~196984..223501	26518	0	15062	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	15062	8577	178	|	246787	prok|CFB group bacteria	15062	8437	169	|						|						|	4	contaminant	prok|CFB group bacteria	57
+KZ616381.1~1..10961	10961	0	2565	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	2565	1501	83	|	871324	prok|CFB group bacteria	2565	1161	78	|						|						|	4	contaminant	prok|CFB group bacteria	23
+KZ616381.1~11621..13492	1872	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ616381.1~14559..15779	1221	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ616381.1~15967..28548	12582	0	2834	|	Bacteroides ihuae	1852362	prok|CFB group bacteria	2834	1045	54	|	1470345	prok|CFB group bacteria	2834	712	52	|						|						|	4	contaminant	prok|CFB group bacteria	23
+KZ616381.1~28887..32465	3579	0	28	|	Bacteroides faecichinchillae	871325	prok|CFB group bacteria	28	28	6	|						|						|						|	0	inconclusive	none	0
+KZ616381.1~32842..34976	2135	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ616381.1~35112..36966	1855	0	1145	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	1145	1145	60	|						|						|						|	3	contaminant	prok|CFB group bacteria	62
+KZ616381.1~38007..39745	1739	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ616381.1~39973..47457	7485	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ616381.1~48134..52175	4042	0	1639	|	Bacteroides xylanisolvens	371601	prok|CFB group bacteria	1639	1639	70	|						|						|						|	3	contaminant	prok|CFB group bacteria	41
+KZ616381.1~52588..79280	26693	0	6938	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	6938	2746	96	|	246787	prok|CFB group bacteria	6938	2598	93	|						|						|	4	contaminant	prok|CFB group bacteria	26
+KZ616381.1~79916..85634	5719	0	802	|	Bacteroides intestinalis	329854	prok|CFB group bacteria	802	741	43	|	1907658	prok|CFB group bacteria	802	633	42	|						|						|	3	low-coverage	prok|CFB group bacteria	14
+KZ616381.1~85836..88768	2933	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ616381.1~89273..94977	5705	0	1597	|	Bacteroides intestinalis	329854	prok|CFB group bacteria	1597	881	54	|	28111	prok|CFB group bacteria	1597	873	53	|						|						|	4	contaminant	prok|CFB group bacteria	28
+KZ616381.1~95700..101451	5752	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ616381.1~101837..107135	5299	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ616381.1~108626..111642	3017	0	1094	|	Bacteroides ndongoniae	1903262	prok|CFB group bacteria	1094	1028	54	|	679937	prok|CFB group bacteria	1094	90	11	|						|						|	3	contaminant	prok|CFB group bacteria	36
+KZ616381.1~112996..118174	5179	0	1940	|	Bacteroides salyersiae	291644	prok|CFB group bacteria	1940	794	60	|	997884	prok|CFB group bacteria	1940	786	57	|						|						|	4	contaminant	prok|CFB group bacteria	37
+KZ616381.1~119816..124849	5034	0	2872	|	Bacteroides intestinalis	329854	prok|CFB group bacteria	2872	2233	91	|	1121097	prok|CFB group bacteria	2872	2007	90	|						|						|	4	contaminant	prok|CFB group bacteria	57
+KZ616381.1~125188..132962	7775	0	1428	|	Bacteroides graminisolvens DSM 19988 = JCM 15093	1121097	prok|CFB group bacteria	1428	100	52	|	47678	prok|CFB group bacteria	1428	174	45	|						|						|	3	low-coverage	prok|CFB group bacteria	18
+KZ616381.1~133773..142221	8449	0	93	|	Bacteroides vulgatus ATCC 8482	435590	prok|CFB group bacteria	93	93	13	|						|						|						|	0	inconclusive	none	0
+KZ616381.1~142415..144928	2514	0	15	|	Bacteroides sp. CBA7301	2715212	prok|CFB group bacteria	15	15	5	|						|						|						|	0	inconclusive	none	0
+KZ616381.1~145206..150267	5062	0	833	|	Bacteroides caecigallinarum	1411144	prok|CFB group bacteria	833	807	50	|	1852362	prok|CFB group bacteria	833	26	7	|						|						|	3	low-coverage	prok|CFB group bacteria	16
+KZ616381.1~150761..157446	6686	0	3645	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	3645	2861	108	|	818	prok|CFB group bacteria	3645	2832	105	|						|						|	4	contaminant	prok|CFB group bacteria	55
+KZ616381.1~158433..160279	1847	0	794	|	Bacteroides caecicola	1462569	prok|CFB group bacteria	794	699	54	|	818	prok|CFB group bacteria	794	787	53	|						|						|	4	contaminant	prok|CFB group bacteria	43
+KZ616381.1~160567..163289	2723	0	825	|	Bacteroides cutis	2024197	prok|CFB group bacteria	825	753	45	|	1462569	prok|CFB group bacteria	825	696	44	|						|						|	3	contaminant	prok|CFB group bacteria	30
+KZ616381.1~163417..168007	4591	0	178	|	Bacteroides congonensis	1871006	prok|CFB group bacteria	178	178	21	|						|						|						|	0	inconclusive	none	0
+KZ616381.1~169099..176082	6984	0	1674	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	1674	927	54	|	997884	prok|CFB group bacteria	1674	903	52	|						|						|	4	contaminant	prok|CFB group bacteria	24
+KZ616381.1~176969..178144	1176	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ616381.1~178592..195779	17188	0	1783	|	Bacteroides acidifaciens	85831	prok|CFB group bacteria	1783	1391	62	|	2650158	prok|CFB group bacteria	1783	663	50	|						|						|	4	low-coverage	prok|CFB group bacteria	10
+KZ616381.1~195979..202082	6104	0	2805	|	Bacteroides ovatus	28116	prok|CFB group bacteria	2805	2082	78	|	820	prok|CFB group bacteria	2805	1219	62	|						|						|	4	contaminant	prok|CFB group bacteria	46
+KZ616381.1~202144..205110	2967	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ616381.1~205649..213314	7666	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ616381.1~214721..216975	2255	0	1459	|	Bacteroides helcogenes P 36-108	693979	prok|CFB group bacteria	1459	1389	95	|	1917883	prok|CFB group bacteria	1459	1411	89	|						|						|	4	contaminant	prok|CFB group bacteria	65
+KZ616381.1~218575..220453	1879	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ616381.1~220621..221977	1357	0	1193	|	Bacteroides massiliensis B84634 = Timone 84634 = DSM 17679 = JCM 13223	1121098	prok|CFB group bacteria	1193	941	58	|	310300	prok|CFB group bacteria	1193	896	56	|						|						|	4	contaminant	prok|CFB group bacteria	88
+KZ616409.1~1..213412	213412	0	132972	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	132972	76727	605	|	871325	prok|CFB group bacteria	132972	73881	596	|						|						|	4	contaminant	prok|CFB group bacteria	62
+KZ616409.1~214869..218459	3591	0	242	|	Bacteroides cellulosilyticus	246787	prok|CFB group bacteria	242	242	30	|						|						|						|	2	low-coverage	prok|CFB group bacteria	7
+KZ616541.1~1..51985	51985	0	24596	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	24596	15462	243	|	1121097	prok|CFB group bacteria	24596	12239	239	|						|						|	4	contaminant	prok|CFB group bacteria	47
+KZ616541.1~53247..54871	1625	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ616541.1~55120..108173	53054	0	17542	|	Bacteroides faecichinchillae	871325	prok|CFB group bacteria	17542	12914	216	|	997884	prok|CFB group bacteria	17542	12442	198	|						|						|	4	contaminant	prok|CFB group bacteria	33
+KZ616541.1~109130..123486	14357	0	7516	|	Bacteroides kribbi	1912894	prok|CFB group bacteria	7516	2124	125	|	1912896	prok|CFB group bacteria	7516	2124	125	|						|						|	4	contaminant	prok|CFB group bacteria	52
+KZ616541.1~123543..200541	76999	0	35443	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	35443	13299	242	|	997884	prok|CFB group bacteria	35443	9486	222	|						|						|	4	contaminant	prok|CFB group bacteria	46
+KZ617006.1~1..2557	2557	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617006.1~2973..33470	30498	0	6397	|	Bacteroides ndongoniae	1903262	prok|CFB group bacteria	6397	4140	125	|	28111	prok|CFB group bacteria	6397	4417	125	|						|						|	4	contaminant	prok|CFB group bacteria	21
+KZ617006.1~33663..35902	2240	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617006.1~36897..79391	42495	0	21496	|	Bacteroides koreensis	1912896	prok|CFB group bacteria	21496	14590	244	|	1912894	prok|CFB group bacteria	21496	14492	243	|						|						|	4	contaminant	prok|CFB group bacteria	51
+KZ617006.1~79756..81255	1500	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617006.1~82099..84147	2049	0	1613	|	Bacteroides kribbi	1912894	prok|CFB group bacteria	1613	701	78	|	1912896	prok|CFB group bacteria	1613	701	78	|						|						|	4	contaminant	prok|CFB group bacteria	79
+KZ617006.1~84288..151827	67540	0	35135	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	35135	18463	267	|	291644	prok|CFB group bacteria	35135	18054	262	|						|						|	4	contaminant	prok|CFB group bacteria	52
+KZ617056.1~1..62046	62046	0	17259	|	Bacteroides luhongzhouii	2650158	prok|CFB group bacteria	17259	8797	180	|	626931	prok|CFB group bacteria	17259	7801	164	|						|						|	4	contaminant	prok|CFB group bacteria	28
+KZ617056.1~62498..145963	83466	0	22275	|	Bacteroides congonensis	1871006	prok|CFB group bacteria	22275	14151	258	|	997884	prok|CFB group bacteria	22275	12312	256	|						|						|	4	contaminant	prok|CFB group bacteria	27
+KZ617099.1~1..60796	60796	0	24087	|	Bacteroides uniformis	820	prok|CFB group bacteria	24087	15885	216	|	2024197	prok|CFB group bacteria	24087	10386	187	|						|						|	4	contaminant	prok|CFB group bacteria	40
+KZ617099.1~60948..80284	19337	0	13853	|	Bacteroides luti	1297750	prok|CFB group bacteria	13853	9789	210	|	329854	prok|CFB group bacteria	13853	9393	196	|						|						|	4	contaminant	prok|CFB group bacteria	72
+KZ617099.1~80394..111007	30614	0	9539	|	Bacteroides cellulosilyticus	246787	prok|CFB group bacteria	9539	8036	179	|	329854	prok|CFB group bacteria	9539	7197	167	|						|						|	4	contaminant	prok|CFB group bacteria	31
+KZ617099.1~111510..113867	2358	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617099.1~115519..141732	26214	0	9086	|	Bacteroides xylanisolvens	371601	prok|CFB group bacteria	9086	2753	103	|	997877	prok|CFB group bacteria	9086	2266	89	|						|						|	4	contaminant	prok|CFB group bacteria	35
+KZ617189.1~1..125169	125169	0	56766	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	56766	33551	363	|	1796613	prok|CFB group bacteria	56766	31586	358	|						|						|	4	contaminant	prok|CFB group bacteria	45
+KZ617189.1~125230..133483	8254	0	489	|	Bacteroides heparinolyticus	28113	prok|CFB group bacteria	489	476	34	|	28119	prok|CFB group bacteria	489	489	34	|						|						|	3	low-coverage	prok|CFB group bacteria	6
+KZ617382.1~1..108230	108230	0	38705	|	Bacteroides timonensis	1470345	prok|CFB group bacteria	38705	22379	292	|	1347393	prok|CFB group bacteria	38705	21736	287	|						|						|	4	contaminant	prok|CFB group bacteria	36
+KZ617382.1~108582..118464	9883	0	535	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	535	535	39	|	1077285	prok|CFB group bacteria	535	518	38	|						|						|	3	low-coverage	prok|CFB group bacteria	5
+KZ617605.1~1..2034	2034	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617605.1~2710..4436	1727	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617605.1~4785..11283	6499	0	2237	|	Bacteroides heparinolyticus	28113	prok|CFB group bacteria	2237	2161	102	|	28119	prok|CFB group bacteria	2237	2149	100	|						|						|	4	contaminant	prok|CFB group bacteria	34
+KZ617605.1~11760..13782	2023	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617605.1~14534..15609	1076	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617605.1~16889..20627	3739	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617605.1~20931..22803	1873	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617605.1~23079..38097	15019	0	2090	|	Bacteroides gallinarum DSM 18171 = JCM 13658	1121096	prok|CFB group bacteria	2090	1148	84	|	1462569	prok|CFB group bacteria	2090	1110	82	|						|						|	4	low-coverage	prok|CFB group bacteria	14
+KZ617605.1~38509..51226	12718	0	2902	|	Bacteroides graminisolvens DSM 19988 = JCM 15093	1121097	prok|CFB group bacteria	2902	1460	65	|	1796613	prok|CFB group bacteria	2902	1100	60	|						|						|	4	contaminant	prok|CFB group bacteria	23
+KZ617605.1~52458..55552	3095	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617605.1~55989..89947	33959	0	12591	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	12591	7485	147	|	1077285	prok|CFB group bacteria	12591	4021	119	|						|						|	4	contaminant	prok|CFB group bacteria	37
+KZ617605.1~90767..95999	5233	0	1945	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	1945	1051	68	|	2715212	prok|CFB group bacteria	1945	1047	68	|						|						|	4	contaminant	prok|CFB group bacteria	37
+KZ617605.1~97133..99831	2699	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617605.1~100533..101665	1133	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617605.1~103197..104437	1241	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617605.1~104765..110834	6070	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617605.1~111671..119717	8047	0	1241	|	Bacteroides timonensis	1470345	prok|CFB group bacteria	1241	1241	59	|						|						|						|	3	low-coverage	prok|CFB group bacteria	15
+KZ617682.1~1..59175	59175	0	25383	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	25383	17694	265	|	291644	prok|CFB group bacteria	25383	16843	263	|						|						|	4	contaminant	prok|CFB group bacteria	43
+KZ617682.1~59835..86821	26987	0	6488	|	Bacteroides luti	1297750	prok|CFB group bacteria	6488	4294	132	|	2447885	prok|CFB group bacteria	6488	4806	131	|						|						|	4	contaminant	prok|CFB group bacteria	24
+KZ617682.1~87736..96809	9074	0	5927	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	5927	4551	122	|	1470345	prok|CFB group bacteria	5927	4011	119	|						|						|	4	contaminant	prok|CFB group bacteria	65
+KZ617783.1~1..1358	1358	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617783.1~2134..65719	63586	0	25880	|	Bacteroides fluxus YIT 12057	763034	prok|CFB group bacteria	25880	15898	251	|	2650158	prok|CFB group bacteria	25880	12281	230	|						|						|	4	contaminant	prok|CFB group bacteria	41
+KZ617783.1~65961..89844	23884	0	11253	|	Bacteroides coprocola DSM 17136	470145	prok|CFB group bacteria	11253	6836	157	|	997884	prok|CFB group bacteria	11253	5581	145	|						|						|	4	contaminant	prok|CFB group bacteria	47
+KZ617900.1~1..5343	5343	0	4096	|	Bacteroides kribbi	1912894	prok|CFB group bacteria	4096	3719	128	|	1912896	prok|CFB group bacteria	4096	3719	128	|						|						|	4	contaminant	prok|CFB group bacteria	77
+KZ617900.1~5613..53187	47575	0	19171	|	Bacteroides ihuae	1852362	prok|CFB group bacteria	19171	10338	213	|	1347393	prok|CFB group bacteria	19171	10239	208	|						|						|	4	contaminant	prok|CFB group bacteria	40
+KZ617900.1~53684..59365	5682	0	2722	|	Bacteroides acidifaciens	85831	prok|CFB group bacteria	2722	1190	66	|	371601	prok|CFB group bacteria	2722	1103	66	|						|						|	4	contaminant	prok|CFB group bacteria	48
+KZ617900.1~62103..65698	3596	0	3147	|	Bacteroides pyogenes	310300	prok|CFB group bacteria	3147	3039	97	|	1912894	prok|CFB group bacteria	3147	1104	51	|						|						|	4	contaminant	prok|CFB group bacteria	88
+KZ617900.1~66420..69695	3276	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ617900.1~71610..79319	7710	0	2843	|	Bacteroides stercoris	46506	prok|CFB group bacteria	2843	1963	79	|	1470345	prok|CFB group bacteria	2843	1730	73	|						|						|	4	contaminant	prok|CFB group bacteria	37
+KZ617900.1~80593..83286	2694	0	1168	|	Bacteroides ihuae	1852362	prok|CFB group bacteria	1168	730	43	|	329854	prok|CFB group bacteria	1168	332	37	|						|						|	3	contaminant	prok|CFB group bacteria	43
+KZ618153.1~1..31344	31344	0	4007	|	Bacteroides salyersiae	291644	prok|CFB group bacteria	4007	2829	108	|	2024197	prok|CFB group bacteria	4007	3223	108	|						|						|	4	low-coverage	prok|CFB group bacteria	13
+KZ618153.1~32749..68215	35467	178	16496	|	Bacteroides graminisolvens DSM 19988 = JCM 15093	1121097	prok|CFB group bacteria	16496	7939	171	|	1841855	prok|CFB group bacteria	16496	7429	166	|						|						|	4	contaminant	prok|CFB group bacteria	47
+KZ618159.1~1..66561	66561	0	5877	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	5877	3047	106	|	1796613	prok|CFB group bacteria	5877	1616	84	|						|						|	4	low-coverage	prok|CFB group bacteria	9
+KZ618159.1~66916..68701	1786	0	610	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	610	454	49	|	871325	prok|CFB group bacteria	610	475	49	|						|						|	3	contaminant	prok|CFB group bacteria	34
+KZ618285.1~1..40185	40185	0	16560	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	16560	11015	205	|	1912894	prok|CFB group bacteria	16560	9853	197	|						|						|	4	contaminant	prok|CFB group bacteria	41
+KZ618285.1~41359..42783	1425	0	801	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	801	707	53	|	1871006	prok|CFB group bacteria	801	708	52	|						|						|	4	contaminant	prok|CFB group bacteria	56
+KZ618285.1~44339..61895	17557	0	13557	|	Bacteroides cutis	2024197	prok|CFB group bacteria	13557	9456	191	|	997884	prok|CFB group bacteria	13557	9107	180	|						|						|	4	contaminant	prok|CFB group bacteria	77
+KZ618290.1~1..1360	1360	0	748	|	Bacteroides sp. CBA7301	2715212	prok|CFB group bacteria	748	743	45	|	1347393	prok|CFB group bacteria	748	497	43	|						|						|	3	contaminant	prok|CFB group bacteria	55
+KZ618290.1~2423..9435	7013	0	1538	|	Bacteroides pyogenes	310300	prok|CFB group bacteria	1538	1121	49	|	2715212	prok|CFB group bacteria	1538	355	33	|						|						|	3	contaminant	prok|CFB group bacteria	22
+KZ618290.1~9604..12005	2402	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618290.1~12520..15713	3194	0	10	|	Bacteroides xylanisolvens	371601	prok|CFB group bacteria	10	10	4	|						|						|						|	0	inconclusive	none	0
+KZ618290.1~16961..18119	1159	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618290.1~18399..21052	2654	0	321	|	Bacteroides neonati	1347393	prok|CFB group bacteria	321	321	35	|						|						|						|	2	low-coverage	prok|CFB group bacteria	12
+KZ618290.1~21418..34690	13273	0	4711	|	Bacteroides ovatus	28116	prok|CFB group bacteria	4711	3801	97	|	28111	prok|CFB group bacteria	4711	2982	92	|						|						|	4	contaminant	prok|CFB group bacteria	35
+KZ618290.1~35443..37490	2048	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618290.1~38115..40694	2580	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618290.1~41606..51631	10026	0	3617	|	Bacteroides coprosuis DSM 18011	679937	prok|CFB group bacteria	3617	2032	76	|	1121099	prok|CFB group bacteria	3617	1084	60	|						|						|	4	contaminant	prok|CFB group bacteria	36
+KZ618290.1~53400..54275	876	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618290.1~54839..58856	4018	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618290.1~59147..63747	4601	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618290.1~65592..70390	4799	0	3313	|	Bacteroides ovatus	28116	prok|CFB group bacteria	3313	3301	95	|	371601	prok|CFB group bacteria	3313	3215	91	|						|						|	4	contaminant	prok|CFB group bacteria	69
+KZ618290.1~71010..77329	6320	0	3112	|	Bacteroides ovatus	28116	prok|CFB group bacteria	3112	2824	99	|	371601	prok|CFB group bacteria	3112	2119	87	|						|						|	4	contaminant	prok|CFB group bacteria	49
+KZ618290.1~77380..81209	3830	0	517	|	Bacteroides congonensis	1871006	prok|CFB group bacteria	517	475	42	|	871325	prok|CFB group bacteria	517	496	42	|						|						|	3	low-coverage	prok|CFB group bacteria	13
+KZ618715.1~1..2927	2927	0	2035	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	2035	1853	72	|	246787	prok|CFB group bacteria	2035	1990	69	|						|						|	4	contaminant	prok|CFB group bacteria	70
+KZ618715.1~2957..8861	5905	0	2539	|	Bacteroides congonensis	1871006	prok|CFB group bacteria	2539	2076	80	|	246787	prok|CFB group bacteria	2539	2024	79	|						|						|	4	contaminant	prok|CFB group bacteria	43
+KZ618715.1~8999..28840	19842	0	1921	|	Bacteroides propionicifaciens DSM 19291 = JCM 14649	1121099	prok|CFB group bacteria	1921	699	69	|	1133319	prok|CFB group bacteria	1921	619	66	|						|						|	4	low-coverage	prok|CFB group bacteria	10
+KZ618715.1~29775..42751	12977	0	2120	|	Bacteroides ndongoniae	1903262	prok|CFB group bacteria	2120	158	78	|	28119	prok|CFB group bacteria	2120	125	77	|						|						|	4	low-coverage	prok|CFB group bacteria	16
+KZ618765.1~1..8849	8849	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618765.1~9301..15232	5932	0	4778	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	4778	4383	142	|	1347393	prok|CFB group bacteria	4778	3740	130	|						|						|	4	contaminant	prok|CFB group bacteria	81
+KZ618765.1~15366..17346	1981	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618765.1~19116..27111	7996	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618765.1~28485..30683	2199	0	1576	|	Bacteroides coprocola DSM 17136	470145	prok|CFB group bacteria	1576	1047	54	|	2024197	prok|CFB group bacteria	1576	1002	53	|						|						|	4	contaminant	prok|CFB group bacteria	72
+KZ618765.1~31114..45348	14235	0	3417	|	Bacteroides caccae	47678	prok|CFB group bacteria	3417	1364	66	|	997877	prok|CFB group bacteria	3417	1039	65	|						|						|	4	contaminant	prok|CFB group bacteria	24
+KZ618765.1~46628..49110	2483	0	1389	|	Bacteroides fluxus YIT 12057	763034	prok|CFB group bacteria	1389	1276	71	|	997884	prok|CFB group bacteria	1389	1300	71	|						|						|	4	contaminant	prok|CFB group bacteria	56
+KZ618765.1~49458..59351	9894	0	4222	|	Bacteroides helcogenes P 36-108	693979	prok|CFB group bacteria	4222	3585	113	|	28111	prok|CFB group bacteria	4222	3546	105	|						|						|	4	contaminant	prok|CFB group bacteria	43
+KZ618765.1~59883..62055	2173	0	513	|	Bacteroides intestinalis	329854	prok|CFB group bacteria	513	513	38	|						|						|						|	2	inconclusive	prok|CFB group bacteria	24
+KZ618765.1~62920..66571	3652	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618765.1~68209..72420	4212	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618765.1~73788..76507	2720	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618765.1~78296..80357	2062	0	398	|	Bacteroides luti	1297750	prok|CFB group bacteria	398	396	33	|	1121097	prok|CFB group bacteria	398	276	33	|						|						|	3	low-coverage	prok|CFB group bacteria	19
+KZ618800.1~1..5464	5464	0	2171	|	Bacteroides eggerthii	28111	prok|CFB group bacteria	2171	1015	64	|	28119	prok|CFB group bacteria	2171	1035	62	|						|						|	4	contaminant	prok|CFB group bacteria	40
+KZ618800.1~6295..8726	2432	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618800.1~10092..36680	26589	0	8278	|	Bacteroides uniformis	820	prok|CFB group bacteria	8278	4411	123	|	1297750	prok|CFB group bacteria	8278	4572	119	|						|						|	4	contaminant	prok|CFB group bacteria	31
+KZ618800.1~37927..40349	2423	0	804	|	Bacteroides ndongoniae	1903262	prok|CFB group bacteria	804	665	58	|	46506	prok|CFB group bacteria	804	764	55	|						|						|	4	contaminant	prok|CFB group bacteria	33
+KZ618800.1~40361..43334	2974	0	1076	|	Bacteroides salyersiae	291644	prok|CFB group bacteria	1076	1076	58	|						|						|						|	3	contaminant	prok|CFB group bacteria	36
+KZ618800.1~44013..45476	1464	0	1279	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	1279	1279	62	|						|						|						|	3	contaminant	prok|CFB group bacteria	87
+KZ618800.1~45709..47843	2135	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618810.1~1..1937	1937	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618810.1~3378..5761	2384	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618810.1~6931..20301	13371	0	3851	|	Bacteroides intestinalis	329854	prok|CFB group bacteria	3851	2612	103	|	1841855	prok|CFB group bacteria	3851	2377	98	|						|						|	4	contaminant	prok|CFB group bacteria	29
+KZ618810.1~20859..22991	2133	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618810.1~23526..25630	2105	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618810.1~26587..30077	3491	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618810.1~31165..46055	14891	0	103	|	Bacteroides sp. CBA7301	2715212	prok|CFB group bacteria	103	94	14	|	1121096	prok|CFB group bacteria	103	74	10	|						|						|	0	inconclusive	none	0
+KZ618810.1~46177..59316	13140	0	6012	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	6012	1589	69	|	28111	prok|CFB group bacteria	6012	1449	66	|						|						|	4	contaminant	prok|CFB group bacteria	46
+KZ618810.1~60321..73592	13272	0	6043	|	Bacteroides caccae	47678	prok|CFB group bacteria	6043	2333	95	|	1462569	prok|CFB group bacteria	6043	2365	90	|						|						|	4	contaminant	prok|CFB group bacteria	46
+KZ618837.1~1..1451	1451	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618837.1~3115..5366	2252	0	952	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	952	889	47	|	1841855	prok|CFB group bacteria	952	104	13	|						|						|	2	inconclusive	prok|CFB group bacteria	42
+KZ618837.1~6321..12152	5832	0	2353	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	2353	1240	64	|	818	prok|CFB group bacteria	2353	947	63	|						|						|	4	contaminant	prok|CFB group bacteria	40
+KZ618837.1~12982..16547	3566	0	2283	|	Bacteroides propionicifaciens DSM 19291 = JCM 14649	1121099	prok|CFB group bacteria	2283	1021	65	|	1077285	prok|CFB group bacteria	2283	973	62	|						|						|	4	contaminant	prok|CFB group bacteria	64
+KZ618837.1~16667..18610	1944	0	888	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	888	888	57	|						|						|						|	3	contaminant	prok|CFB group bacteria	46
+KZ618837.1~18683..38076	19394	0	6257	|	Bacteroides zhangwenhongi	2650157	prok|CFB group bacteria	6257	2567	98	|	1133319	prok|CFB group bacteria	6257	3231	96	|						|						|	4	contaminant	prok|CFB group bacteria	32
+KZ618837.1~38357..42580	4224	0	3190	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	3190	1487	123	|	997884	prok|CFB group bacteria	3190	1259	98	|						|						|	4	contaminant	prok|CFB group bacteria	76
+KZ618895.1~1..1357	1357	0	1152	|	Bacteroides acidifaciens	85831	prok|CFB group bacteria	1152	1152	60	|						|						|						|	3	contaminant	prok|CFB group bacteria	85
+KZ618895.1~3952..5875	1924	0	1239	|	Bacteroides stercorirosoris	871324	prok|CFB group bacteria	1239	1239	83	|	291644	prok|CFB group bacteria	1239	1138	62	|						|						|	4	contaminant	prok|CFB group bacteria	64
+KZ618895.1~7866..10394	2529	0	1976	|	Bacteroides paurosaccharolyticus JCM 15092	1236498	prok|CFB group bacteria	1976	1380	62	|	871324	prok|CFB group bacteria	1976	596	61	|						|						|	4	contaminant	prok|CFB group bacteria	78
+KZ618895.1~12736..14417	1682	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618895.1~14678..24041	9364	0	1976	|	Bacteroides mediterraneensis	1841856	prok|CFB group bacteria	1976	1694	93	|	1411144	prok|CFB group bacteria	1976	1796	91	|						|						|	4	contaminant	prok|CFB group bacteria	21
+KZ618895.1~26070..36530	10461	0	4227	|	Bacteroides cellulosilyticus	246787	prok|CFB group bacteria	4227	3565	128	|	1912894	prok|CFB group bacteria	4227	2580	106	|						|						|	4	contaminant	prok|CFB group bacteria	40
+KZ618918.1~1..2070	2070	0	1882	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	1882	678	55	|	1077285	prok|CFB group bacteria	1882	688	54	|						|						|	4	contaminant	prok|CFB group bacteria	91
+KZ618918.1~3063..9875	6813	0	3066	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	3066	1389	78	|	47678	prok|CFB group bacteria	3066	1774	77	|						|						|	4	contaminant	prok|CFB group bacteria	45
+KZ618918.1~11363..13442	2080	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618918.1~15721..18420	2700	0	347	|	Bacteroides heparinolyticus	28113	prok|CFB group bacteria	347	219	35	|	1297750	prok|CFB group bacteria	347	276	35	|						|						|	3	low-coverage	prok|CFB group bacteria	13
+KZ618918.1~18686..22821	4136	0	3561	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	3561	2031	97	|	1841855	prok|CFB group bacteria	3561	2042	97	|						|						|	4	contaminant	prok|CFB group bacteria	86
+KZ618918.1~22907..35854	12948	0	4099	|	Bacteroides salyersiae	291644	prok|CFB group bacteria	4099	3621	129	|	1871006	prok|CFB group bacteria	4099	3627	126	|						|						|	4	contaminant	prok|CFB group bacteria	32
+KZ618955.1~1..27950	27950	0	7895	|	Bacteroides kribbi	1912894	prok|CFB group bacteria	7895	7553	142	|	1912896	prok|CFB group bacteria	7895	7155	140	|						|						|	4	contaminant	prok|CFB group bacteria	28
+KZ618955.1~28584..34710	6127	0	2774	|	Bacteroides caecimuris	1796613	prok|CFB group bacteria	2774	184	74	|	1347393	prok|CFB group bacteria	2774	179	73	|						|						|	4	contaminant	prok|CFB group bacteria	45
+KZ618957.1~1..3923	3923	0	1064	|	Bacteroides timonensis	1470345	prok|CFB group bacteria	1064	1064	64	|	371601	prok|CFB group bacteria	1064	1022	62	|						|						|	4	contaminant	prok|CFB group bacteria	27
+KZ618957.1~3960..8508	4549	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618957.1~9106..16388	7283	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618957.1~16408..18473	2066	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618957.1~19163..22332	3170	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ618957.1~23085..32113	9029	172	95	|	Bacteroides gallinarum DSM 18171 = JCM 13658	1121096	prok|CFB group bacteria	95	63	10	|	371601	prok|CFB group bacteria	95	80	10	|						|						|	0	inconclusive	none	0
+KZ618957.1~32713..34673	1961	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619027.1~1..2187	2187	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619027.1~2427..5369	2943	0	941	|	Bacteroides ilei	1907658	prok|CFB group bacteria	941	721	44	|	1796613	prok|CFB group bacteria	941	220	27	|						|						|	3	contaminant	prok|CFB group bacteria	32
+KZ619027.1~6852..13293	6442	0	2398	|	Bacteroides coprosuis DSM 18011	679937	prok|CFB group bacteria	2398	2152	90	|	291644	prok|CFB group bacteria	2398	1679	89	|						|						|	4	contaminant	prok|CFB group bacteria	37
+KZ619027.1~14780..18518	3739	0	1631	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	1631	1506	66	|	871325	prok|CFB group bacteria	1631	1362	65	|						|						|	4	contaminant	prok|CFB group bacteria	44
+KZ619027.1~18804..28420	9617	0	2063	|	Bacteroides ovatus	28116	prok|CFB group bacteria	2063	1794	89	|	1912894	prok|CFB group bacteria	2063	1794	89	|						|						|	4	contaminant	prok|CFB group bacteria	21
+KZ619027.1~29026..32069	3044	0	1996	|	Bacteroides sp. CBA7301	2715212	prok|CFB group bacteria	1996	968	48	|	1411144	prok|CFB group bacteria	1996	1028	47	|						|						|	3	contaminant	prok|CFB group bacteria	66
+KZ619202.1~1..19445	19445	0	5470	|	Bacteroides kribbi	1912894	prok|CFB group bacteria	5470	4178	116	|	28116	prok|CFB group bacteria	5470	4181	115	|						|						|	4	contaminant	prok|CFB group bacteria	28
+KZ619202.1~20134..22917	2784	0	334	|	Bacteroides mediterraneensis	1841856	prok|CFB group bacteria	334	334	28	|						|						|						|	2	low-coverage	prok|CFB group bacteria	12
+KZ619202.1~24918..26913	1996	0	934	|	Bacteroides faecichinchillae	871325	prok|CFB group bacteria	934	664	43	|	626929	prok|CFB group bacteria	934	816	43	|						|						|	3	contaminant	prok|CFB group bacteria	47
+KZ619217.1~1..1703	1703	0	1703	|	Bacteroides sp. CBA7301	2715212	prok|CFB group bacteria	1703	1674	86	|	997877	prok|CFB group bacteria	1703	1646	85	|						|						|	4	contaminant	prok|CFB group bacteria	100
+KZ619217.1~3097..7782	4686	0	14	|	Bacteroides luhongzhouii	2650158	prok|CFB group bacteria	14	14	4	|						|						|						|	0	inconclusive	none	0
+KZ619217.1~8623..9850	1228	0	11	|	Bacteroides kribbi	1912894	prok|CFB group bacteria	11	11	3	|						|						|						|	0	inconclusive	none	0
+KZ619217.1~10837..16403	5567	0	1965	|	Bacteroides ovatus	28116	prok|CFB group bacteria	1965	1431	91	|	1912896	prok|CFB group bacteria	1965	1431	91	|						|						|	4	contaminant	prok|CFB group bacteria	35
+KZ619217.1~17405..25774	8370	0	1717	|	Bacteroides uniformis	820	prok|CFB group bacteria	1717	1118	56	|	1121098	prok|CFB group bacteria	1717	967	55	|						|						|	4	contaminant	prok|CFB group bacteria	21
+KZ619236.1~1..13847	13847	0	2062	|	Bacteroides cutis	2024197	prok|CFB group bacteria	2062	1749	79	|	997884	prok|CFB group bacteria	2062	1567	77	|						|						|	4	low-coverage	prok|CFB group bacteria	15
+KZ619236.1~14267..16149	1883	0	724	|	Bacteroides timonensis	1470345	prok|CFB group bacteria	724	672	58	|	2024197	prok|CFB group bacteria	724	675	58	|						|						|	4	contaminant	prok|CFB group bacteria	38
+KZ619236.1~16696..22136	5441	0	1358	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	1358	1284	73	|	2715212	prok|CFB group bacteria	1358	1082	66	|						|						|	4	contaminant	prok|CFB group bacteria	25
+KZ619236.1~22201..25701	3501	0	2636	|	Bacteroides ovatus	28116	prok|CFB group bacteria	2636	2593	104	|	997877	prok|CFB group bacteria	2636	2045	97	|						|						|	4	contaminant	prok|CFB group bacteria	75
+KZ619236.1~25913..29328	3416	0	981	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	981	852	92	|	291644	prok|CFB group bacteria	981	789	85	|						|						|	4	contaminant	prok|CFB group bacteria	29
+KZ619236.1~29532..31844	2313	0	1605	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	1605	1510	75	|	1121099	prok|CFB group bacteria	1605	1483	73	|						|						|	4	contaminant	prok|CFB group bacteria	69
+KZ619236.1~32204..33374	1171	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619240.1~1..2748	2748	0	972	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	972	823	48	|	246787	prok|CFB group bacteria	972	463	40	|						|						|	3	contaminant	prok|CFB group bacteria	35
+KZ619240.1~3910..9232	5323	0	2556	|	Bacteroides vulgatus ATCC 8482	435590	prok|CFB group bacteria	2556	2037	85	|	1236498	prok|CFB group bacteria	2556	2119	83	|						|						|	4	contaminant	prok|CFB group bacteria	48
+KZ619240.1~11088..19661	8574	0	4134	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	4134	2744	98	|	1133319	prok|CFB group bacteria	4134	2697	97	|						|						|	4	contaminant	prok|CFB group bacteria	48
+KZ619240.1~22787..26544	3758	0	880	|	Bacteroides salyersiae	291644	prok|CFB group bacteria	880	515	52	|	246787	prok|CFB group bacteria	880	523	50	|						|						|	4	contaminant	prok|CFB group bacteria	23
+KZ619255.1~1..899	899	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619255.1~3741..6335	2595	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619255.1~8926..10586	1661	0	1267	|	Bacteroides cellulosilyticus	246787	prok|CFB group bacteria	1267	932	64	|	1470345	prok|CFB group bacteria	1267	923	63	|						|						|	4	contaminant	prok|CFB group bacteria	76
+KZ619255.1~12369..20519	8151	0	3706	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	3706	2016	77	|	1912896	prok|CFB group bacteria	3706	1783	76	|						|						|	4	contaminant	prok|CFB group bacteria	45
+KZ619255.1~20878..24896	4019	0	3613	|	Bacteroides ovatus	28116	prok|CFB group bacteria	3613	3023	113	|	1912894	prok|CFB group bacteria	3613	2714	107	|						|						|	4	contaminant	prok|CFB group bacteria	90
+KZ619305.1~1..9194	9194	0	3525	|	Bacteroides massiliensis B84634 = Timone 84634 = DSM 17679 = JCM 13223	1121098	prok|CFB group bacteria	3525	1618	68	|	329854	prok|CFB group bacteria	3525	1335	63	|						|						|	4	contaminant	prok|CFB group bacteria	38
+KZ619305.1~10551..12130	1580	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619305.1~12324..22645	10322	0	371	|	Bacteroides propionicifaciens DSM 19291 = JCM 14649	1121099	prok|CFB group bacteria	371	371	30	|						|						|						|	2	low-coverage	prok|CFB group bacteria	4
+KZ619305.1~22789..23723	935	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619358.1~1..871	871	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619358.1~3289..6054	2766	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619358.1~6516..7599	1084	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619358.1~7789..12580	4792	0	2279	|	Bacteroides paurosaccharolyticus JCM 15092	1236498	prok|CFB group bacteria	2279	633	82	|	1133319	prok|CFB group bacteria	2279	1095	72	|						|						|	3	contaminant	prok|CFB group bacteria	48
+KZ619358.1~12650..14074	1425	0	1404	|	Bacteroides stercoris	46506	prok|CFB group bacteria	1404	912	97	|	2447885	prok|CFB group bacteria	1404	911	82	|						|						|	4	contaminant	prok|CFB group bacteria	99
+KZ619358.1~14550..16096	1547	0	244	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	244	244	25	|						|						|						|	0	inconclusive	none	0
+KZ619358.1~18198..20981	2784	0	748	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	748	748	47	|						|						|						|	2	inconclusive	prok|CFB group bacteria	27
+KZ619358.1~21361..30696	9336	0	3657	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	3657	1987	78	|	820	prok|CFB group bacteria	3657	1955	69	|						|						|	4	contaminant	prok|CFB group bacteria	39
+KZ619360.1~1..1779	1779	0	936	|	Bacteroides rodentium JCM 16496	1236512	prok|CFB group bacteria	936	899	71	|	871324	prok|CFB group bacteria	936	933	67	|						|						|	4	contaminant	prok|CFB group bacteria	53
+KZ619360.1~2158..9962	7805	0	3990	|	Bacteroides rodentium JCM 16496	1236512	prok|CFB group bacteria	3990	2217	99	|	626931	prok|CFB group bacteria	3990	2126	96	|						|						|	4	contaminant	prok|CFB group bacteria	51
+KZ619360.1~10321..14528	4208	0	3535	|	Bacteroides caecigallinarum	1411144	prok|CFB group bacteria	3535	3239	105	|	1907658	prok|CFB group bacteria	3535	2759	94	|						|						|	4	contaminant	prok|CFB group bacteria	84
+KZ619360.1~17602..19612	2011	0	1669	|	Bacteroides ihuae	1852362	prok|CFB group bacteria	1669	1323	78	|	1297750	prok|CFB group bacteria	1669	1322	77	|						|						|	4	contaminant	prok|CFB group bacteria	83
+KZ619360.1~20377..22640	2264	0	1286	|	Bacteroides ovatus	28116	prok|CFB group bacteria	1286	1125	62	|	1297750	prok|CFB group bacteria	1286	1072	56	|						|						|	4	contaminant	prok|CFB group bacteria	57
+KZ619377.1~1..1831	1831	0	607	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	607	363	47	|	2024197	prok|CFB group bacteria	607	428	38	|						|						|	3	contaminant	prok|CFB group bacteria	33
+KZ619377.1~1999..17562	15564	0	7227	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	7227	3933	119	|	1133319	prok|CFB group bacteria	7227	2468	101	|						|						|	4	contaminant	prok|CFB group bacteria	46
+KZ619377.1~18333..22305	3973	0	2238	|	Bacteroides faecichinchillae	871325	prok|CFB group bacteria	2238	1697	90	|	2024197	prok|CFB group bacteria	2238	1338	89	|						|						|	4	contaminant	prok|CFB group bacteria	56
+KZ619396.1~1..2231	2231	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619396.1~2841..5203	2363	0	26	|	Bacteroides gallinaceum	1462571	prok|CFB group bacteria	26	26	7	|						|						|						|	0	inconclusive	none	0
+KZ619396.1~5672..9154	3483	0	87	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	87	51	8	|	28113	prok|CFB group bacteria	87	36	7	|						|						|	0	inconclusive	none	0
+KZ619396.1~11247..14732	3486	0	87	|	Bacteroides graminisolvens DSM 19988 = JCM 15093	1121097	prok|CFB group bacteria	87	56	8	|	626931	prok|CFB group bacteria	87	31	6	|						|						|	0	inconclusive	none	0
+KZ619396.1~16194..18770	2577	0	765	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	765	755	52	|	871325	prok|CFB group bacteria	765	738	52	|						|						|	4	contaminant	prok|CFB group bacteria	30
+KZ619396.1~20644..22630	1987	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619396.1~25215..27245	2031	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619396.1~30047..32756	2710	183	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619396.1~34350..36681	2332	0	629	|	Bacteroides ihuae	1852362	prok|CFB group bacteria	629	629	42	|						|						|						|	2	inconclusive	prok|CFB group bacteria	27
+KZ619396.1~38206..41184	2979	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619396.1~41616..43340	1725	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619396.1~43795..47848	4054	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619396.1~50597..52375	1779	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619396.1~53545..57235	3691	0	316	|	Bacteroides cellulosilyticus	246787	prok|CFB group bacteria	316	316	23	|						|						|						|	0	inconclusive	none	0
+KZ619396.1~57802..62142	4341	0	1306	|	Bacteroides eggerthii	28111	prok|CFB group bacteria	1306	1091	54	|	1121097	prok|CFB group bacteria	1306	731	46	|						|						|	4	contaminant	prok|CFB group bacteria	30
+KZ619396.1~63206..65647	2442	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619396.1~65760..69854	4095	0	34	|	Bacteroides salyersiae	291644	prok|CFB group bacteria	34	34	5	|						|						|						|	0	inconclusive	none	0
+KZ619402.1~1..19126	19126	0	6590	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	6590	1973	114	|	46506	prok|CFB group bacteria	6590	2888	111	|						|						|	4	contaminant	prok|CFB group bacteria	34
+KZ619402.1~20377..21841	1465	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619438.1~1..2094	2094	0	11	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	11	11	5	|						|						|						|	0	inconclusive	none	0
+KZ619438.1~2139..5388	3250	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619438.1~7406..20626	13221	0	4086	|	Bacteroides ilei	1907658	prok|CFB group bacteria	4086	2884	96	|	28111	prok|CFB group bacteria	4086	2178	85	|						|						|	4	contaminant	prok|CFB group bacteria	31
+KZ619486.1~1..8814	8814	0	2884	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	2884	2430	89	|	2715212	prok|CFB group bacteria	2884	2229	82	|						|						|	4	contaminant	prok|CFB group bacteria	33
+KZ619486.1~9078..10373	1296	0	473	|	Bacteroides congonensis	1871006	prok|CFB group bacteria	473	461	37	|	2715212	prok|CFB group bacteria	473	197	26	|						|						|	3	contaminant	prok|CFB group bacteria	36
+KZ619486.1~11613..19435	7823	0	2544	|	Bacteroides caccae	47678	prok|CFB group bacteria	2544	590	48	|	1347393	prok|CFB group bacteria	2544	887	48	|						|						|	3	contaminant	prok|CFB group bacteria	33
+KZ619510.1~1..1987	1987	0	881	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	881	623	39	|	626931	prok|CFB group bacteria	881	237	37	|						|						|	3	contaminant	prok|CFB group bacteria	44
+KZ619510.1~4001..6590	2590	142	2486	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	2486	2353	109	|	2650157	prok|CFB group bacteria	2486	2446	107	|						|						|	4	contaminant	prok|CFB group bacteria	96
+KZ619510.1~8695..10705	2011	0	2006	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	2006	1973	93	|	626931	prok|CFB group bacteria	2006	1510	89	|						|						|	4	contaminant	prok|CFB group bacteria	100
+KZ619510.1~12444..20392	7949	0	78	|	Bacteroides intestinalis	329854	prok|CFB group bacteria	78	78	10	|						|						|						|	0	inconclusive	none	0
+KZ619510.1~21364..24315	2952	0	1812	|	Bacteroides ihuae	1852362	prok|CFB group bacteria	1812	176	72	|	1297750	prok|CFB group bacteria	1812	107	70	|						|						|	4	contaminant	prok|CFB group bacteria	61
+KZ619519.1~1..2984	2984	0	1349	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	1349	1268	55	|	1236498	prok|CFB group bacteria	1349	898	43	|						|						|	4	contaminant	prok|CFB group bacteria	45
+KZ619519.1~4009..13628	9620	0	4703	|	Bacteroides luti	1297750	prok|CFB group bacteria	4703	1710	68	|	2447885	prok|CFB group bacteria	4703	1078	65	|						|						|	4	contaminant	prok|CFB group bacteria	49
+KZ619519.1~16226..17371	1146	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619519.1~20698..21695	998	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619519.1~22458..26159	3702	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619564.1~1..1301	1301	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619564.1~1760..3949	2190	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619564.1~4682..6108	1427	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619564.1~6143..11220	5078	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619564.1~11868..14593	2726	0	20	|	Bacteroides rodentium JCM 16496	1236512	prok|CFB group bacteria	20	20	6	|						|						|						|	0	inconclusive	none	0
+KZ619564.1~14795..18105	3311	0	898	|	Bacteroides ovatus	28116	prok|CFB group bacteria	898	780	59	|	371601	prok|CFB group bacteria	898	780	59	|						|						|	4	contaminant	prok|CFB group bacteria	27
+KZ619638.1~1..13760	13760	0	6307	|	Bacteroides cellulosilyticus	246787	prok|CFB group bacteria	6307	3625	122	|	329854	prok|CFB group bacteria	6307	3454	112	|						|						|	4	contaminant	prok|CFB group bacteria	46
+KZ619638.1~14277..18294	4018	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619638.1~19804..20676	873	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619679.1~1..823	823	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619679.1~3809..16967	13159	0	3459	|	Bacteroides sp. CBA7301	2715212	prok|CFB group bacteria	3459	1406	74	|	871324	prok|CFB group bacteria	3459	1194	73	|						|						|	4	contaminant	prok|CFB group bacteria	26
+KZ619679.1~17591..24318	6728	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619700.1~1..7641	7641	0	1042	|	Bacteroides coprosuis DSM 18011	679937	prok|CFB group bacteria	1042	834	54	|	46506	prok|CFB group bacteria	1042	423	54	|						|						|	4	low-coverage	prok|CFB group bacteria	14
+KZ619700.1~7957..11951	3995	0	1998	|	Bacteroides koreensis	1912896	prok|CFB group bacteria	1998	1166	68	|	818	prok|CFB group bacteria	1998	1124	66	|						|						|	4	contaminant	prok|CFB group bacteria	50
+KZ619700.1~13141..22223	9083	0	4278	|	Bacteroides coprosuis DSM 18011	679937	prok|CFB group bacteria	4278	1912	88	|	1297750	prok|CFB group bacteria	4278	1657	81	|						|						|	4	contaminant	prok|CFB group bacteria	47
+KZ619700.1~23459..25543	2085	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619716.1~1..14392	14392	0	7357	|	Bacteroides stercorirosoris	871324	prok|CFB group bacteria	7357	5379	143	|	1236512	prok|CFB group bacteria	7357	4703	134	|						|						|	4	contaminant	prok|CFB group bacteria	51
+KZ619716.1~16084..22723	6640	0	853	|	Bacteroides ihuae	1852362	prok|CFB group bacteria	853	774	44	|	2715212	prok|CFB group bacteria	853	326	24	|						|						|	2	low-coverage	prok|CFB group bacteria	13
+KZ619716.1~24268..25628	1361	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619716.1~25923..28494	2572	0	1015	|	Bacteroides luti	1297750	prok|CFB group bacteria	1015	882	54	|	291644	prok|CFB group bacteria	1015	962	53	|						|						|	4	contaminant	prok|CFB group bacteria	39
+KZ619716.1~29586..33240	3655	0	2906	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	2906	2499	105	|	2650158	prok|CFB group bacteria	2906	2746	104	|						|						|	4	contaminant	prok|CFB group bacteria	80
+KZ619729.1~1..7026	7026	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619729.1~8562..15413	6852	0	1574	|	Bacteroides kribbi	1912894	prok|CFB group bacteria	1574	883	53	|	1912896	prok|CFB group bacteria	1574	883	53	|						|						|	4	contaminant	prok|CFB group bacteria	23
+KZ619738.1~1..11193	11193	0	5511	|	Bacteroides graminisolvens DSM 19988 = JCM 15093	1121097	prok|CFB group bacteria	5511	5161	132	|	1347393	prok|CFB group bacteria	5511	4890	126	|						|						|	4	contaminant	prok|CFB group bacteria	49
+KZ619738.1~11884..12320	437	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619738.1~12491..15281	2791	0	942	|	Bacteroides neonati	1347393	prok|CFB group bacteria	942	883	49	|	1133319	prok|CFB group bacteria	942	872	49	|						|						|	3	contaminant	prok|CFB group bacteria	34
+KZ619822.1~1..2996	2996	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619822.1~3446..6926	3481	0	1921	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	1921	1341	73	|	1133319	prok|CFB group bacteria	1921	1292	68	|						|						|	4	contaminant	prok|CFB group bacteria	55
+KZ619822.1~8697..11290	2594	0	1347	|	Bacteroides cellulosilyticus	246787	prok|CFB group bacteria	1347	1323	64	|	371601	prok|CFB group bacteria	1347	799	59	|						|						|	4	contaminant	prok|CFB group bacteria	52
+KZ619822.1~12743..15330	2588	0	2074	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	2074	1931	90	|	1841855	prok|CFB group bacteria	2074	1903	86	|						|						|	4	contaminant	prok|CFB group bacteria	80
+KZ619822.1~18321..23012	4692	0	3126	|	Bacteroides luti	1297750	prok|CFB group bacteria	3126	2762	99	|	1871006	prok|CFB group bacteria	3126	2387	89	|						|						|	4	contaminant	prok|CFB group bacteria	67
+KZ619822.1~24211..26553	2343	0	1485	|	Bacteroides caecicola	1462569	prok|CFB group bacteria	1485	627	44	|	626929	prok|CFB group bacteria	1485	688	43	|						|						|	3	contaminant	prok|CFB group bacteria	63
+KZ619824.1~1..19089	19089	0	8553	|	Bacteroides ovatus	28116	prok|CFB group bacteria	8553	4869	126	|	435590	prok|CFB group bacteria	8553	2934	105	|						|						|	4	contaminant	prok|CFB group bacteria	45
+KZ619824.1~21494..26273	4780	0	4643	|	Bacteroides vulgatus ATCC 8482	435590	prok|CFB group bacteria	4643	3579	109	|	679937	prok|CFB group bacteria	4643	3264	109	|						|						|	4	contaminant	prok|CFB group bacteria	97
+KZ619824.1~27375..29463	2089	0	691	|	Bacteroides salyersiae	291644	prok|CFB group bacteria	691	674	58	|	1796613	prok|CFB group bacteria	691	617	57	|						|						|	4	contaminant	prok|CFB group bacteria	33
+KZ619824.1~30910..31784	875	0	731	|	Bacteroides sp. CBA7301	2715212	prok|CFB group bacteria	731	569	46	|	2650157	prok|CFB group bacteria	731	525	46	|						|						|	4	contaminant	prok|CFB group bacteria	84
+KZ619837.1~1..2067	2067	0	2033	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	2033	1870	87	|	1841855	prok|CFB group bacteria	2033	1495	80	|						|						|	4	contaminant	prok|CFB group bacteria	98
+KZ619837.1~2216..9095	6880	0	576	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	576	372	32	|	28116	prok|CFB group bacteria	576	359	31	|						|						|	3	low-coverage	prok|CFB group bacteria	8
+KZ619837.1~10919..14154	3236	0	531	|	Bacteroides vulgatus ATCC 8482	435590	prok|CFB group bacteria	531	531	40	|						|						|						|	2	low-coverage	prok|CFB group bacteria	16
+KZ619850.1~1..2391	2391	0	638	|	Bacteroides congonensis	1871006	prok|CFB group bacteria	638	595	57	|	1912896	prok|CFB group bacteria	638	600	54	|						|						|	4	contaminant	prok|CFB group bacteria	27
+KZ619850.1~4639..10390	5752	0	852	|	Bacteroides caecigallinarum	1411144	prok|CFB group bacteria	852	135	84	|	679937	prok|CFB group bacteria	852	239	81	|						|						|	3	low-coverage	prok|CFB group bacteria	15
+KZ619850.1~10708..15323	4616	0	2601	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	2601	2358	93	|	1912894	prok|CFB group bacteria	2601	2245	86	|						|						|	4	contaminant	prok|CFB group bacteria	56
+KZ619852.1~1..2180	2180	0	1508	|	Bacteroides propionicifaciens DSM 19291 = JCM 14649	1121099	prok|CFB group bacteria	1508	1361	67	|	1411144	prok|CFB group bacteria	1508	1353	66	|						|						|	4	contaminant	prok|CFB group bacteria	69
+KZ619852.1~3107..20194	17088	0	8832	|	Bacteroides caccae	47678	prok|CFB group bacteria	8832	6960	202	|	371601	prok|CFB group bacteria	8832	6131	202	|						|						|	4	contaminant	prok|CFB group bacteria	52
+KZ619852.1~20519..23257	2739	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619852.1~23670..25885	2216	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619852.1~26000..27805	1806	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619863.1~1..9422	9422	0	3363	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	3363	2940	134	|	1841855	prok|CFB group bacteria	3363	2933	133	|						|						|	4	contaminant	prok|CFB group bacteria	36
+KZ619863.1~9974..14101	4128	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619864.1~1..2458	2458	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619864.1~2714..5779	3066	0	62	|	Bacteroides ovatus	28116	prok|CFB group bacteria	62	62	10	|						|						|						|	0	inconclusive	none	0
+KZ619864.1~6663..13864	7202	0	3072	|	Bacteroides cellulosilyticus	246787	prok|CFB group bacteria	3072	1946	91	|	626931	prok|CFB group bacteria	3072	1874	85	|						|						|	4	contaminant	prok|CFB group bacteria	43
+KZ619865.1~1..5411	5411	0	1307	|	Bacteroides luhongzhouii	2650158	prok|CFB group bacteria	1307	1217	63	|	997884	prok|CFB group bacteria	1307	1185	60	|						|						|	4	contaminant	prok|CFB group bacteria	24
+KZ619865.1~6203..9876	3674	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619865.1~11173..17761	6589	0	2412	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	2412	2146	90	|	1133319	prok|CFB group bacteria	2412	2139	88	|						|						|	4	contaminant	prok|CFB group bacteria	37
+KZ619865.1~19154..25096	5943	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619865.1~25501..30268	4768	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ619940.1~1..4841	4841	161	2573	|	Bacteroides stercorirosoris	871324	prok|CFB group bacteria	2573	1566	74	|	626931	prok|CFB group bacteria	2573	1514	71	|						|						|	4	contaminant	prok|CFB group bacteria	53
+KZ619940.1~5597..15339	9743	0	3778	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	3778	1560	79	|	820	prok|CFB group bacteria	3778	1284	59	|						|						|	4	contaminant	prok|CFB group bacteria	39
+KZ619949.1~1..9190	9190	0	1162	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	1162	1108	59	|	1852362	prok|CFB group bacteria	1162	591	47	|						|						|	4	low-coverage	prok|CFB group bacteria	13
+KZ619949.1~10278..12756	2479	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620035.1~1..3168	3168	0	2961	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	2961	1263	80	|	1347393	prok|CFB group bacteria	2961	1081	55	|						|						|	4	contaminant	prok|CFB group bacteria	93
+KZ620035.1~3257..7710	4454	0	1692	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	1692	1299	90	|	1347393	prok|CFB group bacteria	1692	1347	89	|						|						|	4	contaminant	prok|CFB group bacteria	38
+KZ620035.1~8022..11961	3940	0	2074	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	2074	1386	103	|	1347393	prok|CFB group bacteria	2074	1333	98	|						|						|	4	contaminant	prok|CFB group bacteria	53
+KZ620035.1~12294..14213	1920	0	1046	|	Bacteroides timonensis	1470345	prok|CFB group bacteria	1046	1046	62	|						|						|						|	3	contaminant	prok|CFB group bacteria	54
+KZ620047.1~1..9242	9242	0	2735	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	2735	2388	79	|	1903262	prok|CFB group bacteria	2735	2181	76	|						|						|	4	contaminant	prok|CFB group bacteria	30
+KZ620047.1~9811..11793	1983	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620060.1~1..1481	1481	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620060.1~4597..6743	2147	0	1298	|	Bacteroides ihuae	1852362	prok|CFB group bacteria	1298	1278	67	|	626931	prok|CFB group bacteria	1298	394	31	|						|						|	4	contaminant	prok|CFB group bacteria	60
+KZ620060.1~7921..10308	2388	0	2369	|	Bacteroides ihuae	1852362	prok|CFB group bacteria	2369	2007	92	|	435590	prok|CFB group bacteria	2369	2130	92	|						|						|	4	contaminant	prok|CFB group bacteria	99
+KZ620060.1~10542..12070	1529	0	1184	|	Bacteroides stercoris	46506	prok|CFB group bacteria	1184	1072	71	|	246787	prok|CFB group bacteria	1184	1078	70	|						|						|	4	contaminant	prok|CFB group bacteria	77
+KZ620060.1~13111..17097	3987	0	2765	|	Bacteroides ihuae	1852362	prok|CFB group bacteria	2765	2468	113	|	1297750	prok|CFB group bacteria	2765	2296	113	|						|						|	4	contaminant	prok|CFB group bacteria	69
+KZ620060.1~17728..20396	2669	0	2666	|	Bacteroides xylanisolvens	371601	prok|CFB group bacteria	2666	2422	96	|	1852362	prok|CFB group bacteria	2666	2598	95	|						|						|	4	contaminant	prok|CFB group bacteria	100
+KZ620080.1~1..5144	5144	0	2919	|	Bacteroides caecicola	1462569	prok|CFB group bacteria	2919	2627	95	|	1841856	prok|CFB group bacteria	2919	2797	95	|						|						|	4	contaminant	prok|CFB group bacteria	57
+KZ620080.1~5266..11475	6210	194	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620222.1~1..1694	1694	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620222.1~2218..12000	9783	0	4752	|	Bacteroides coprosuis DSM 18011	679937	prok|CFB group bacteria	4752	2221	87	|	1347393	prok|CFB group bacteria	4752	1736	69	|						|						|	4	contaminant	prok|CFB group bacteria	49
+KZ620222.1~12057..16649	4593	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620237.1~1..4214	4214	0	1015	|	Bacteroides congonensis	1871006	prok|CFB group bacteria	1015	1015	70	|						|						|						|	3	contaminant	prok|CFB group bacteria	24
+KZ620237.1~4934..7967	3034	0	98	|	Bacteroides cutis	2024197	prok|CFB group bacteria	98	98	13	|						|						|						|	0	inconclusive	none	0
+KZ620237.1~9333..10261	929	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620243.1~1..635	635	0	377	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	377	377	60	|						|						|						|	3	contaminant	prok|CFB group bacteria	59
+KZ620243.1~3973..5866	1894	0	383	|	Bacteroides gallinaceum	1462571	prok|CFB group bacteria	383	383	30	|						|						|						|	2	inconclusive	prok|CFB group bacteria	20
+KZ620243.1~8242..10217	1976	0	267	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	267	267	26	|						|						|						|	2	low-coverage	prok|CFB group bacteria	14
+KZ620255.1~1..6111	6111	0	307	|	Bacteroides paurosaccharolyticus JCM 15092	1236498	prok|CFB group bacteria	307	215	19	|	626931	prok|CFB group bacteria	307	92	12	|						|						|	0	inconclusive	none	0
+KZ620255.1~7785..22656	14872	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620255.1~22979..25471	2493	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620263.1~1..3233	3233	0	2369	|	Bacteroides luti	1297750	prok|CFB group bacteria	2369	2302	164	|	28113	prok|CFB group bacteria	2369	2218	161	|						|						|	4	contaminant	prok|CFB group bacteria	73
+KZ620263.1~4068..15953	11886	0	8898	|	Bacteroides ndongoniae	1903262	prok|CFB group bacteria	8898	4207	344	|	2715212	prok|CFB group bacteria	8898	4031	323	|						|						|	4	contaminant	prok|CFB group bacteria	75
+KZ620263.1~16078..20804	4727	0	2606	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	2606	1710	71	|	1907658	prok|CFB group bacteria	2606	1103	55	|						|						|	4	contaminant	prok|CFB group bacteria	55
+KZ620263.1~24082..25728	1647	0	673	|	Bacteroides ndongoniae	1903262	prok|CFB group bacteria	673	624	45	|	1077285	prok|CFB group bacteria	673	654	44	|						|						|	3	contaminant	prok|CFB group bacteria	41
+KZ620263.1~26957..28766	1810	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620263.1~29643..31856	2214	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620263.1~31894..34493	2600	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620266.1~1..1090	1090	0	702	|	Bacteroides paurosaccharolyticus JCM 15092	1236498	prok|CFB group bacteria	702	702	48	|						|						|						|	2	inconclusive	prok|CFB group bacteria	64
+KZ620266.1~3920..7298	3379	0	2945	|	Bacteroides acidifaciens	85831	prok|CFB group bacteria	2945	2152	84	|	28116	prok|CFB group bacteria	2945	2197	82	|						|						|	4	contaminant	prok|CFB group bacteria	87
+KZ620266.1~8629..10137	1509	0	968	|	Bacteroides propionicifaciens DSM 19291 = JCM 14649	1121099	prok|CFB group bacteria	968	818	62	|	1121097	prok|CFB group bacteria	968	836	58	|						|						|	4	contaminant	prok|CFB group bacteria	64
+KZ620293.1~1..1498	1498	0	1059	|	Bacteroides congonensis	1871006	prok|CFB group bacteria	1059	1059	52	|						|						|						|	3	contaminant	prok|CFB group bacteria	71
+KZ620293.1~4039..8616	4578	0	12	|	Bacteroides clarus	626929	prok|CFB group bacteria	12	12	4	|						|						|						|	0	inconclusive	none	0
+KZ620293.1~10946..12746	1801	0	420	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	420	420	31	|						|						|						|	2	inconclusive	prok|CFB group bacteria	23
+KZ620293.1~15586..17064	1479	0	833	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	833	685	56	|	1796613	prok|CFB group bacteria	833	700	54	|						|						|	4	contaminant	prok|CFB group bacteria	56
+KZ620363.1~1..883	883	0	412	|	Bacteroides barnesiae DSM 18169 = JCM 13652	1121094	prok|CFB group bacteria	412	396	36	|	28111	prok|CFB group bacteria	412	412	34	|						|						|	3	contaminant	prok|CFB group bacteria	47
+KZ620363.1~4199..4992	794	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620363.1~6155..10241	4087	90	158	|	Bacteroides salyersiae	291644	prok|CFB group bacteria	158	100	17	|	371601	prok|CFB group bacteria	158	124	16	|						|						|	0	inconclusive	none	0
+KZ620363.1~10467..11028	562	0	29	|	Bacteroides caecimuris	1796613	prok|CFB group bacteria	29	29	7	|						|						|						|	0	inconclusive	none	0
+KZ620473.1~1..3378	3378	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620473.1~4433..12099	7667	0	3941	|	Bacteroides timonensis	1470345	prok|CFB group bacteria	3941	3858	122	|	246787	prok|CFB group bacteria	3941	3110	111	|						|						|	4	contaminant	prok|CFB group bacteria	51
+KZ620473.1~12554..14997	2444	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620473.1~15389..17330	1942	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620477.1~1..1815	1815	0	1406	|	Bacteroides coprosuis DSM 18011	679937	prok|CFB group bacteria	1406	1234	60	|	1121099	prok|CFB group bacteria	1406	1280	60	|						|						|	4	contaminant	prok|CFB group bacteria	77
+KZ620477.1~2176..5020	2845	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620477.1~6873..8812	1940	0	959	|	Bacteroides coprosuis DSM 18011	679937	prok|CFB group bacteria	959	675	48	|	1796613	prok|CFB group bacteria	959	583	43	|						|						|	3	contaminant	prok|CFB group bacteria	49
+KZ620546.1~1..1326	1326	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620546.1~1724..8368	6645	0	2010	|	Bacteroides cutis	2024197	prok|CFB group bacteria	2010	1158	63	|	871325	prok|CFB group bacteria	2010	1116	63	|						|						|	4	contaminant	prok|CFB group bacteria	30
+KZ620553.1~1..1764	1764	0	1463	|	Bacteroides zoogleoformans	28119	prok|CFB group bacteria	1463	518	54	|	1133319	prok|CFB group bacteria	1463	533	54	|						|						|	4	contaminant	prok|CFB group bacteria	83
+KZ620553.1~2387..9140	6754	182	897	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	897	313	55	|	1347393	prok|CFB group bacteria	897	575	50	|						|						|	3	low-coverage	prok|CFB group bacteria	13
+KZ620560.1~1..3294	3294	0	2174	|	Bacteroides caecigallinarum	1411144	prok|CFB group bacteria	2174	2116	85	|	1852362	prok|CFB group bacteria	2174	2109	81	|						|						|	4	contaminant	prok|CFB group bacteria	66
+KZ620560.1~3638..5969	2332	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620560.1~6206..8899	2694	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620566.1~1..926	926	0	527	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	527	527	58	|						|						|						|	3	contaminant	prok|CFB group bacteria	57
+KZ620566.1~1234..4215	2982	0	1313	|	Bacteroides sp. CBA7301	2715212	prok|CFB group bacteria	1313	1313	72	|	1133319	prok|CFB group bacteria	1313	893	58	|						|						|	4	contaminant	prok|CFB group bacteria	44
+KZ620566.1~7046..12293	5248	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ620695.1~1..1464	1464	0	936	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	936	603	42	|	1841855	prok|CFB group bacteria	936	552	41	|						|						|	3	contaminant	prok|CFB group bacteria	64
+KZ620695.1~1478..7549	6072	0	4602	|	Bacteroides ihuae	1852362	prok|CFB group bacteria	4602	3777	113	|	2715212	prok|CFB group bacteria	4602	3366	97	|						|						|	4	contaminant	prok|CFB group bacteria	76
+KZ620803.1~1..1940	1940	0	1594	|	Bacteroides ovatus	28116	prok|CFB group bacteria	1594	1530	97	|	1912894	prok|CFB group bacteria	1594	1423	97	|						|						|	4	contaminant	prok|CFB group bacteria	82
+KZ620803.1~2881..7524	4644	0	2307	|	Bacteroides coprocola DSM 17136	470145	prok|CFB group bacteria	2307	1704	73	|	371601	prok|CFB group bacteria	2307	1467	69	|						|						|	4	contaminant	prok|CFB group bacteria	50
+KZ620875.1~1..5177	5177	0	1415	|	Bacteroides caccae	47678	prok|CFB group bacteria	1415	777	72	|	1470345	prok|CFB group bacteria	1415	1296	70	|						|						|	3	contaminant	prok|CFB group bacteria	27
+KZ620875.1~5352..6756	1405	0	630	|	Bacteroides ilei	1907658	prok|CFB group bacteria	630	521	52	|	2650158	prok|CFB group bacteria	630	572	48	|						|						|	4	contaminant	prok|CFB group bacteria	45
+KZ620896.1~1..2629	2629	0	2098	|	Bacteroides zhangwenhongi	2650157	prok|CFB group bacteria	2098	1915	84	|	291644	prok|CFB group bacteria	2098	1938	84	|						|						|	4	contaminant	prok|CFB group bacteria	80
+KZ620896.1~4292..6689	2398	0	1571	|	Bacteroides congonensis	1871006	prok|CFB group bacteria	1571	1559	85	|	435590	prok|CFB group bacteria	1571	1498	80	|						|						|	4	contaminant	prok|CFB group bacteria	66
+KZ621008.1~1..8114	8114	213	2867	|	Bacteroides stercorirosoris	871324	prok|CFB group bacteria	2867	1413	82	|	329854	prok|CFB group bacteria	2867	1399	81	|						|						|	4	contaminant	prok|CFB group bacteria	35
+KZ621008.1~10389..13757	3369	0	2731	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	2731	2237	96	|	1297750	prok|CFB group bacteria	2731	1129	77	|						|						|	4	contaminant	prok|CFB group bacteria	81
+KZ621008.1~14224..16712	2489	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621008.1~19458..20109	652	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621021.1~1..11886	11886	0	4159	|	Bacteroides ilei	1907658	prok|CFB group bacteria	4159	3574	103	|	997884	prok|CFB group bacteria	4159	2645	102	|						|						|	4	contaminant	prok|CFB group bacteria	35
+KZ621021.1~12152..14434	2283	0	2110	|	Bacteroides paurosaccharolyticus JCM 15092	1236498	prok|CFB group bacteria	2110	1170	53	|	246787	prok|CFB group bacteria	2110	1036	51	|						|						|	4	contaminant	prok|CFB group bacteria	92
+KZ621021.1~16426..21141	4716	0	481	|	Bacteroides faecichinchillae	871325	prok|CFB group bacteria	481	421	37	|	997877	prok|CFB group bacteria	481	410	33	|						|						|	3	low-coverage	prok|CFB group bacteria	10
+KZ621021.1~21822..24424	2603	0	2310	|	Bacteroides caccae	47678	prok|CFB group bacteria	2310	2154	92	|	1912896	prok|CFB group bacteria	2310	2226	89	|						|						|	4	contaminant	prok|CFB group bacteria	89
+KZ621048.1~1..4754	4754	0	3316	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	3316	3157	101	|	2715212	prok|CFB group bacteria	3316	3107	98	|						|						|	4	contaminant	prok|CFB group bacteria	70
+KZ621048.1~5850..6667	818	0	187	|	Bacteroides helcogenes P 36-108	693979	prok|CFB group bacteria	187	187	30	|						|						|						|	2	inconclusive	prok|CFB group bacteria	23
+KZ621094.1~1..2750	2750	0	2679	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	2679	2629	96	|	329854	prok|CFB group bacteria	2679	2248	86	|						|						|	4	contaminant	prok|CFB group bacteria	97
+KZ621094.1~3605..6062	2458	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621107.1~1..4713	4713	0	2704	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	2704	1477	85	|	1077285	prok|CFB group bacteria	2704	1717	82	|						|						|	4	contaminant	prok|CFB group bacteria	57
+KZ621107.1~5227..6479	1253	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621114.1~1..1511	1511	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621114.1~4403..6715	2313	0	1063	|	Bacteroides finegoldii	338188	prok|CFB group bacteria	1063	798	47	|	818	prok|CFB group bacteria	1063	760	46	|						|						|	3	contaminant	prok|CFB group bacteria	46
+KZ621114.1~9374..12542	3169	0	1386	|	Bacteroides caccae	47678	prok|CFB group bacteria	1386	1343	70	|	1077285	prok|CFB group bacteria	1386	1238	69	|						|						|	4	contaminant	prok|CFB group bacteria	44
+KZ621114.1~13250..15370	2121	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621114.1~18542..20048	1507	0	1161	|	Bacteroides ovatus	28116	prok|CFB group bacteria	1161	1029	60	|	310300	prok|CFB group bacteria	1161	1015	59	|						|						|	4	contaminant	prok|CFB group bacteria	77
+KZ621116.1~1..2062	2062	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621116.1~2779..6000	3222	0	759	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	759	383	46	|	1077285	prok|CFB group bacteria	759	376	32	|						|						|	3	contaminant	prok|CFB group bacteria	24
+KZ621187.1~1..2354	2354	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621187.1~4236..5797	1562	0	1143	|	Bacteroides sp. CBA7301	2715212	prok|CFB group bacteria	1143	981	61	|	1121094	prok|CFB group bacteria	1143	1001	59	|						|						|	4	contaminant	prok|CFB group bacteria	73
+KZ621226.1~1..1678	1678	0	1493	|	Bacteroides neonati	1347393	prok|CFB group bacteria	1493	1493	91	|						|						|						|	3	contaminant	prok|CFB group bacteria	89
+KZ621226.1~3924..5720	1797	0	1278	|	Bacteroides caecimuris	1796613	prok|CFB group bacteria	1278	1278	70	|						|						|						|	3	contaminant	prok|CFB group bacteria	71
+KZ621232.1~1..3825	3825	0	1728	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	1728	1611	74	|	2715212	prok|CFB group bacteria	1728	1049	69	|						|						|	4	contaminant	prok|CFB group bacteria	45
+KZ621232.1~4408..9559	5152	0	2383	|	Bacteroides uniformis	820	prok|CFB group bacteria	2383	2019	85	|	818	prok|CFB group bacteria	2383	616	39	|						|						|	4	contaminant	prok|CFB group bacteria	46
+KZ621232.1~11644..13529	1886	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621232.1~16913..19140	2228	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621232.1~19648..20394	747	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621237.1~1..7012	7012	0	4926	|	Bacteroides luti	1297750	prok|CFB group bacteria	4926	3586	113	|	1841855	prok|CFB group bacteria	4926	4173	112	|						|						|	4	contaminant	prok|CFB group bacteria	70
+KZ621237.1~7725..16684	8960	0	7691	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	7691	5046	146	|	1462569	prok|CFB group bacteria	7691	2211	71	|						|						|	4	contaminant	prok|CFB group bacteria	86
+KZ621237.1~18315..20312	1998	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621250.1~1..1664	1664	0	1559	|	Bacteroides faecichinchillae	871325	prok|CFB group bacteria	1559	677	58	|	1841855	prok|CFB group bacteria	1559	697	57	|						|						|	4	contaminant	prok|CFB group bacteria	94
+KZ621250.1~2748..5617	2870	0	821	|	Bacteroides kribbi	1912894	prok|CFB group bacteria	821	518	41	|	28119	prok|CFB group bacteria	821	603	41	|						|						|	3	contaminant	prok|CFB group bacteria	29
+KZ621287.1~1..1453	1453	0	1072	|	Bacteroides congonensis	1871006	prok|CFB group bacteria	1072	927	66	|	28116	prok|CFB group bacteria	1072	849	65	|						|						|	4	contaminant	prok|CFB group bacteria	74
+KZ621287.1~3520..5589	2070	0	776	|	Bacteroides coprosuis DSM 18011	679937	prok|CFB group bacteria	776	776	43	|						|						|						|	2	inconclusive	prok|CFB group bacteria	37
+KZ621319.1~1..1717	1717	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621319.1~2944..12005	9062	0	4383	|	Bacteroides dorei CL03T12C01	997877	prok|CFB group bacteria	4383	1607	74	|	1297750	prok|CFB group bacteria	4383	990	66	|						|						|	4	contaminant	prok|CFB group bacteria	48
+KZ621319.1~12959..15235	2277	0	962	|	Bacteroides intestinalis	329854	prok|CFB group bacteria	962	897	63	|	2715212	prok|CFB group bacteria	962	897	62	|						|						|	4	contaminant	prok|CFB group bacteria	42
+KZ621325.1~1..1027	1027	0	900	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	900	817	50	|	1912894	prok|CFB group bacteria	900	749	49	|						|						|	4	contaminant	prok|CFB group bacteria	88
+KZ621325.1~3787..5510	1724	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621335.1~1..1104	1104	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621335.1~3503..5497	1995	0	1315	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	1315	803	63	|	1133319	prok|CFB group bacteria	1315	778	61	|						|						|	4	contaminant	prok|CFB group bacteria	66
+KZ621344.1~1..3292	3292	0	300	|	Bacteroides coprosuis DSM 18011	679937	prok|CFB group bacteria	300	205	37	|	2650158	prok|CFB group bacteria	300	215	32	|						|						|	3	low-coverage	prok|CFB group bacteria	9
+KZ621344.1~3652..7299	3648	0	1933	|	Bacteroides zhangwenhongi	2650157	prok|CFB group bacteria	1933	1531	71	|	1236498	prok|CFB group bacteria	1933	1552	69	|						|						|	4	contaminant	prok|CFB group bacteria	53
+KZ621349.1~1..1386	1386	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621349.1~3683..5465	1783	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621355.1~1..376	376	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621355.1~2832..5819	2988	0	601	|	Bacteroides sp. CBA7301	2715212	prok|CFB group bacteria	601	563	36	|	371601	prok|CFB group bacteria	601	581	34	|						|						|	3	contaminant	prok|CFB group bacteria	20
+KZ621355.1~7592..8327	736	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621355.1~10938..12405	1468	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621355.1~13307..16115	2809	0	15	|	Bacteroides luhongzhouii	2650158	prok|CFB group bacteria	15	15	4	|						|						|						|	0	inconclusive	none	0
+KZ621377.1~1..1931	1931	0	1410	|	Bacteroides timonensis	1470345	prok|CFB group bacteria	1410	1410	71	|						|						|						|	3	contaminant	prok|CFB group bacteria	73
+KZ621377.1~3948..5405	1458	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621378.1~1..987	987	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621378.1~2846..5211	2366	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621378.1~6711..14522	7812	0	1838	|	Bacteroides salyersiae	291644	prok|CFB group bacteria	1838	1570	76	|	1236498	prok|CFB group bacteria	1838	1548	76	|						|						|	4	contaminant	prok|CFB group bacteria	24
+KZ621378.1~14642..16359	1718	0	989	|	Bacteroides nordii CL02T12C05	997884	prok|CFB group bacteria	989	688	54	|	338188	prok|CFB group bacteria	989	707	53	|						|						|	4	contaminant	prok|CFB group bacteria	58
+KZ621385.1~1..2075	2075	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621385.1~4296..5361	1066	0	331	|	Bacteroides ilei	1907658	prok|CFB group bacteria	331	331	30	|						|						|						|	2	inconclusive	prok|CFB group bacteria	31
+KZ621393.1~1..3696	3696	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621393.1~5326..7304	1979	0	1584	|	Bacteroides salyersiae	291644	prok|CFB group bacteria	1584	1341	73	|	626931	prok|CFB group bacteria	1584	1323	71	|						|						|	4	contaminant	prok|CFB group bacteria	80
+KZ621393.1~7664..7971	308	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621411.1~1..1578	1578	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621411.1~3901..7660	3760	0	1090	|	Bacteroides ihuae	1852362	prok|CFB group bacteria	1090	570	54	|	626929	prok|CFB group bacteria	1090	607	54	|						|						|	4	contaminant	prok|CFB group bacteria	29
+KZ621417.1~1..513	513	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621417.1~4386..5344	959	0	646	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	646	556	70	|	1796613	prok|CFB group bacteria	646	563	64	|						|						|	4	contaminant	prok|CFB group bacteria	67
+KZ621506.1~1..1800	1800	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621506.1~4492..5581	1090	0	601	|	Bacteroides salyersiae	291644	prok|CFB group bacteria	601	567	41	|	28119	prok|CFB group bacteria	601	595	39	|						|						|	3	contaminant	prok|CFB group bacteria	55
+KZ621506.1~8530..10739	2210	0	1933	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	1933	1852	91	|	1912896	prok|CFB group bacteria	1933	1908	90	|						|						|	4	contaminant	prok|CFB group bacteria	87
+KZ621506.1~12395..14039	1645	0	1259	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	1259	1052	63	|	1297750	prok|CFB group bacteria	1259	1038	63	|						|						|	4	contaminant	prok|CFB group bacteria	77
+KZ621516.1~1..933	933	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621516.1~3685..5126	1442	0	1398	|	Bacteroides kribbi	1912894	prok|CFB group bacteria	1398	863	65	|	28116	prok|CFB group bacteria	1398	863	65	|						|						|	4	contaminant	prok|CFB group bacteria	97
+KZ621551.1~1..508	508	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621551.1~3491..5022	1532	0	1512	|	Bacteroides kribbi	1912894	prok|CFB group bacteria	1512	1291	65	|	997884	prok|CFB group bacteria	1512	1320	65	|						|						|	4	contaminant	prok|CFB group bacteria	99
+KZ621555.1~1..2041	2041	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621555.1~3164..5813	2650	0	2179	|	Bacteroides faecalis	2447885	prok|CFB group bacteria	2179	1494	78	|	1841855	prok|CFB group bacteria	2179	1488	77	|						|						|	4	contaminant	prok|CFB group bacteria	82
+KZ621564.1~1..1802	1802	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621564.1~3950..5040	1091	0	737	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	737	737	63	|	47678	prok|CFB group bacteria	737	721	58	|						|						|	4	contaminant	prok|CFB group bacteria	68
+KZ621581.1~1..2764	2764	232	1641	|	Bacteroides luti	1297750	prok|CFB group bacteria	1641	1321	70	|	1347393	prok|CFB group bacteria	1641	1318	64	|						|						|	4	contaminant	prok|CFB group bacteria	59
+KZ621581.1~3532..5001	1470	0	1048	|	Bacteroides coprosuis DSM 18011	679937	prok|CFB group bacteria	1048	664	60	|	2024197	prok|CFB group bacteria	1048	1048	58	|						|						|	3	contaminant	prok|CFB group bacteria	71
+KZ621594.1~1..1625	1625	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621594.1~1890..4974	3085	0	1417	|	Bacteroides coprocola DSM 17136	470145	prok|CFB group bacteria	1417	1417	63	|						|						|						|	3	contaminant	prok|CFB group bacteria	46
+KZ621607.1~1..786	786	0	325	|	Bacteroides thetaiotaomicron	818	prok|CFB group bacteria	325	325	42	|						|						|						|	2	inconclusive	prok|CFB group bacteria	41
+KZ621607.1~4305..4947	643	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621632.1~1..838	838	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621632.1~3728..4866	1139	0	1139	|	Bacteroides oleiciplenus	626931	prok|CFB group bacteria	1139	1113	75	|	1077285	prok|CFB group bacteria	1139	1082	73	|						|						|	4	contaminant	prok|CFB group bacteria	100
+KZ621745.1~1..2611	2611	0	2117	|	Bacteroides luti	1297750	prok|CFB group bacteria	2117	1422	82	|	1236498	prok|CFB group bacteria	2117	1412	77	|						|						|	4	contaminant	prok|CFB group bacteria	81
+KZ621745.1~2845..4390	1546	0	1032	|	Bacteroides graminisolvens DSM 19988 = JCM 15093	1121097	prok|CFB group bacteria	1032	628	47	|	1236498	prok|CFB group bacteria	1032	405	44	|						|						|	4	contaminant	prok|CFB group bacteria	67
+KZ621866.1~1..1916	1916	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621866.1~2192..4037	1846	0	1141	|	Bacteroides luti	1297750	prok|CFB group bacteria	1141	856	65	|	1462569	prok|CFB group bacteria	1141	674	59	|						|						|	4	contaminant	prok|CFB group bacteria	62
+KZ621965.1~1..1273	1273	0	1143	|	Bacteroides paurosaccharolyticus JCM 15092	1236498	prok|CFB group bacteria	1143	869	68	|	1297750	prok|CFB group bacteria	1143	893	67	|						|						|	4	contaminant	prok|CFB group bacteria	90
+KZ621965.1~2054..3813	1760	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621977.1~1..566	566	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ621977.1~2314..3801	1488	0	1140	|	Bacteroides luhongzhouii	2650158	prok|CFB group bacteria	1140	1092	62	|	1236512	prok|CFB group bacteria	1140	1123	62	|						|						|	4	contaminant	prok|CFB group bacteria	77
+KZ621981.1~1..2001	2001	0	1599	|	Bacteroides faecis MAJ27	1077285	prok|CFB group bacteria	1599	1436	86	|	997877	prok|CFB group bacteria	1599	1515	82	|						|						|	4	contaminant	prok|CFB group bacteria	80
+KZ621981.1~2901..4078	1178	0	476	|	Bacteroides caccae	47678	prok|CFB group bacteria	476	476	41	|	1912896	prok|CFB group bacteria	476	455	38	|						|						|	3	contaminant	prok|CFB group bacteria	40
+KZ621981.1~4171..7090	2920	0	1184	|	Bacteroides dorei CL03T12C01	997877	prok|CFB group bacteria	1184	1030	74	|	2650158	prok|CFB group bacteria	1184	1049	69	|						|						|	4	contaminant	prok|CFB group bacteria	41
+KZ622059.1~1..1944	1944	0	971	|	Bacteroides stercorirosoris	871324	prok|CFB group bacteria	971	725	58	|	1796613	prok|CFB group bacteria	971	849	58	|						|						|	4	contaminant	prok|CFB group bacteria	50
+KZ622059.1~3021..3674	654	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ622155.1~1..2403	2403	0	1760	|	Bacteroides bouchesdurhonensis	1841855	prok|CFB group bacteria	1760	1563	74	|	818	prok|CFB group bacteria	1760	1587	71	|						|						|	4	contaminant	prok|CFB group bacteria	73
+KZ622155.1~2599..3532	934	0	468	|	Bacteroides cutis	2024197	prok|CFB group bacteria	468	408	44	|	1907658	prok|CFB group bacteria	468	396	43	|						|						|	3	contaminant	prok|CFB group bacteria	50
+KZ622168.1~1..1069	1069	0	13	|	Bacteroides cellulosilyticus	246787	prok|CFB group bacteria	13	13	4	|						|						|						|	0	inconclusive	none	0
+KZ622168.1~2234..3510	1277	0	901	|	Bacteroides finegoldii	338188	prok|CFB group bacteria	901	879	51	|	2650158	prok|CFB group bacteria	901	794	46	|						|						|	4	contaminant	prok|CFB group bacteria	71
+KZ622448.1~1..790	790	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ622448.1~1286..3675	2390	0	1912	|	Bacteroides salyersiae	291644	prok|CFB group bacteria	1912	1824	76	|	2447885	prok|CFB group bacteria	1912	1305	75	|						|						|	4	contaminant	prok|CFB group bacteria	80
+KZ622448.1~4639..6091	1453	0	1401	|	Bacteroides luti	1297750	prok|CFB group bacteria	1401	1147	81	|	1121094	prok|CFB group bacteria	1401	1127	73	|						|						|	4	contaminant	prok|CFB group bacteria	96
+KZ622545.1~1..633	633	0	631	|	Bacteroides ihuae	1852362	prok|CFB group bacteria	631	631	58	|						|						|						|	3	contaminant	prok|CFB group bacteria	100
+KZ622545.1~749..1457	709	0	0	|							|						|						|						|	0	inconclusive	none	0
+KZ622602.1~1..2470	2470	0	1520	|	Bacteroides reticulotermitis	1133319	prok|CFB group bacteria	1520	1104	70	|	871324	prok|CFB group bacteria	1520	751	54	|						|						|	4	contaminant	prok|CFB group bacteria	62
+KZ622602.1~4261..5405	1145	0	1097	|	Bacteroides caecigallinarum	1411144	prok|CFB group bacteria	1097	1065	58	|	818	prok|CFB group bacteria	1097	1037	53	|						|						|	4	contaminant	prok|CFB group bacteria	96
