@@ -21,39 +21,29 @@ class RunGX:
         gxdb_name = os.path.basename(self.args.gx_db)
 
         expanded_gxdb_disk = None
-        if self.args.disk_index_path:
+        if self.args.disk_index_path is not None:
             expanded_gxdb_disk = Path(os.path.realpath(self.args.disk_index_path))
 
         docker_image = self.args.docker_image
         container_engine = self.args.container_engine
-        if container_engine == "docker":
-            subprocess.run(
-                [container_engine, "pull", docker_image],
-                shell=False,
-                check=True,
-            )
-
-        mount_arg = ""
-        if container_engine == "docker":
-            mount_arg = "-v"
-        elif container_engine == "singularity":
-            mount_arg = "--bind"
+        subprocess.run(
+            [container_engine, "pull", docker_image],
+            shell=False,
+            check=True,
+        )
 
         extra_docker_args = []
         extra_db_args = []
         if expanded_gxdb_disk is not None:
-            extra_docker_args = [mount_arg, f"${expanded_gxdb_disk}:/db-disk-volume/"]
+            extra_docker_args = ["-v", str(expanded_gxdb_disk) + ":/db-disk-volume/"]
             extra_db_args = ["--gx-db-disk", "/db-disk-volume/"]
-
-        name_args = []
-        if container_engine == "docker":
-            name_args = ["--name", "retrieve_db"]
 
         retrieve_db_args = [
             container_engine,
             "run",
-            *name_args,
-            mount_arg,
+            "--name",
+            "retrieve_db",
+            "-v",
             str(expanded_gxdb) + ":" + str(CONTAINER_DB),
             *extra_docker_args,
             docker_image,
@@ -68,8 +58,7 @@ class RunGX:
             shell=False,
             check=True,
         )
-        if container_engine == "docker":
-            subprocess.run([container_engine, "container", "rm", "retrieve_db"], shell=False, check=True)
+        subprocess.run([container_engine, "container", "rm", "retrieve_db"], shell=False, check=True)
 
     def run_gx(self):
         expanded_gxdb = Path(os.path.realpath(os.path.dirname(self.args.gx_db)))
@@ -83,28 +72,17 @@ class RunGX:
         container_engine = self.args.container_engine
         docker_image = self.args.docker_image
 
-        if container_engine == "docker":
-            subprocess.run([container_engine, "pull", docker_image], shell=False, check=True)
-
-        name_args = []
-        if container_engine == "docker":
-            name_args = ["--name", CONTAINER]
-
-        mount_arg = ""
-        if container_engine == "docker":
-            mount_arg = "-v"
-        elif container_engine == "singularity":
-            mount_arg = "--bind"
-
+        subprocess.run([container_engine, "pull", docker_image], shell=False, check=True)
         docker_args = [
             container_engine,
             "run",
-            *name_args,
-            mount_arg,
+            "--name",
+            CONTAINER,
+            "-v",
             str(expanded_gxdb) + ":" + str(CONTAINER_DB),
-            mount_arg,
+            "-v",
             str(fasta_path) + ":" + str(Path("/sample-volume/")),
-            mount_arg,
+            "-v",
             str(expanded_output) + ":" + str(Path("/output-volume/")),
             docker_image,
             "python3",
@@ -117,21 +95,18 @@ class RunGX:
             str(CONTAINER_DB / gxdb_name),
             "--tax-id",
             str(self.args.tax_id),
+            "--blast-div",
+            self.args.blast_div,
             "--debug",
-            "--split-fasta=" + ("T" if self.args.split_fasta else "F"),
         ]
         if self.args.out_basename:
             docker_args.extend(["--out-basename", self.args.out_basename])
-        if self.args.blast_div:
-            docker_args.extend(["--div", self.args.blast_div])
-        if self.args.allow_same_species is not None:
-            docker_args.extend(["--allow-same-species", self.args.allow_same_species])
-
+        if self.args.split_fasta:
+            docker_args.extend(["--split-fasta"])
         print(docker_args)
         subprocess.run(docker_args, shell=False, check=True)
 
-        if container_engine == "docker":
-            subprocess.run([container_engine, "container", "rm", CONTAINER], shell=False, check=True)
+        subprocess.run([container_engine, "container", "rm", CONTAINER], shell=False, check=True)
 
     def run(self):
         self.run_retrieve_db()
@@ -139,11 +114,7 @@ class RunGX:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(
-        description="Run fcsgenome Docker image",
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
-    )
-
+    parser = argparse.ArgumentParser(description="run fcsgenome docker image")
     parser.add_argument(
         "--fasta",
         required=True,
@@ -153,7 +124,7 @@ def main() -> int:
         "--out-dir",
         metavar="path",
         default=".",
-        help="output directory",
+        help="output directory default .",
     )
     parser.add_argument(
         "--gx-db",
@@ -169,7 +140,6 @@ def main() -> int:
     )
     parser.add_argument(
         "--out-basename",
-        default=None,
         help="output filename will be {out-basename}.{tax-id}.rpt",
     )
     parser.add_argument(
@@ -179,19 +149,14 @@ def main() -> int:
     )
     parser.add_argument(
         "--tax-id",
-        required=True,
+        default="",
         type=int,
         help="taxid of input fasta",
     )
     parser.add_argument(
         "--blast-div",
-        default=None,
+        default="",
         help="input blast-div of the tax-id, from 'NCBI BLAST name' on taxon Info page.",
-    )
-    parser.add_argument(
-        "--allow-same-species",
-        default=None,
-        help="Whether to use same-species hits as evidence",
     )
     parser.add_argument(
         "--container-engine",
