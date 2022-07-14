@@ -1,13 +1,17 @@
+# FCS
+
+The NCBI Foreign Contamination Screen (FCS) is a tool suite for identifying and removing contaminant sequences in genome assemblies. Contaminants are defined as sequences in a dataset that do not originate from the biological source organism and can arise from a variety of environmental and laboratory sources. FCS will help you remove contaminants from genomes before submission to GenBank.
+
 ## FCS-adaptor
-Foreign contamination screening (FCS)-adaptor is a VecScreen-based program to detect adaptor contamination in genomic sequences. This tool is one module within a larger NCBI FCS program suite. Please read the [wiki](https://github.com/ncbi/fcs/wiki) for instructions on how to run FCS-adaptor.  
+FCS-adaptor detects adaptor and vector contamination in genome sequences. FCS-adaptor is a high-throughput implementation of NCBI VecScreen https://www.ncbi.nlm.nih.gov/tools/vecscreen/about/. The FCS-adaptor executable retrieves a Docker or Singularity container and runs a pipeline to screen input sequences against a non-redudant database of adaptors and vectors using stringent BLAST searches and remove contaminants from your genome.
+
+FCS-adaptor removes terminal and internal matches to foreign sequences. Sequences identified as mostly adaptor/vector are removed entirely. FCS-adaptor produces a tabular output with details on the contaminant sequences identified as well as a cleaned FASTA.
+
+Please read the [wiki](https://github.com/ncbi/fcs/wiki) for instructions on how to run FCS-adaptor.
 
 ## FCS-GX
-Foreign contamination screening (FCS)-GX is a genome-level contamination detecting tool based on a cross-species alignment component called the GX aligner. FCS-GX is one module within a larger NCBI foreign contamination screening program suite.
+FCS-GX detects contamination from foreign organisms in genome sequences using the GX (Genome Cross-species) aligner. The FCS-GX executable retrieves a Docker or Singularity container and runs a pipeline to align sequences to a large database of NCBI genomes through modified k-mer seeds and assign a most likely taxonomic division.
 
-To assign contaminants, FCS-GX requires an input assembly in FASTA format and a numeric NCBI taxonomic identifier (tax-id) corresponding to the source genome. The FCS-GX then aligns sequences to a large database of NCBI genomes through modified k-mer seeds, and resolves matches to alignments.
-
-The GX aligner operates in two passes. In the first pass, GX retains identifiers from taxonomic groups with the highest scoring alignments and filters out lower scoring alignments. During this phase, GX also performs masking for both low-complexity and high-copy repeats. In the second pass, sequence alignments are refined and extended to produce final coverage and scoring metrics.
-
-FCS-GX detects contaminant sequences when their taxonomic assignment is different from the user provided tax-id. A contamination summary report provides the counts and total sizes of contaminant regions. Results are also provided at the sequence-level for the inspection of FCS-GX assignments.
+FCS-GX classifies sequences as contaminant when their taxonomic assignment is different from the user provided taxonomic identifier. A contamination summary provides an overview of observed contaminant divisions, counts, and total sizes, and an action report provides details and recommended actions for each problematic sequence. 
 
 Please read the [wiki](https://github.com/ncbi/fcs/wiki) for instructions on how to run FCS-GX.
