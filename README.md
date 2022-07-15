@@ -15,3 +15,8 @@ FCS-GX detects contamination from foreign organisms in genome sequences using th
 FCS-GX classifies sequences as contaminant when their taxonomic assignment is different from the user provided taxonomic identifier. A contamination summary provides an overview of observed contaminant divisions, counts, and total sizes, and an action report provides details and recommended actions for each problematic sequence. 
 
 Please read the [wiki](https://github.com/ncbi/fcs/wiki/FCS-GX) for instructions on how to run FCS-GX.
+
+### FUNDING
+This work was supported by the National Center for Biotechnology Information of the National Library of Medicine (NLM), National Institutes of Health.
+
+FCS is part of the [NIH Comparative Genomics Resource (CGR)](https://www.ncbi.nlm.nih.gov/comparative-genomics-resource/), an NLM project to establish an ecosystem to facilitate reliable comparative genomics analyses for all eukaryotic organisms.
