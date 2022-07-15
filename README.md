@@ -3,7 +3,7 @@
 The NCBI Foreign Contamination Screen (FCS) is a tool suite for identifying and removing contaminant sequences in genome assemblies. Contaminants are defined as sequences in a dataset that do not originate from the biological source organism and can arise from a variety of environmental and laboratory sources. FCS will help you remove contaminants from genomes before submission to GenBank.
 
 ## FCS-adaptor
-FCS-adaptor detects adaptor and vector contamination in genome sequences. FCS-adaptor is a high-throughput implementation of [NCBI VecScreen] (https://www.ncbi.nlm.nih.gov/tools/vecscreen/about/). The FCS-adaptor executable retrieves a Docker or Singularity container and runs a pipeline to screen input sequences against a non-redudant database of adaptors and vectors using stringent BLAST searches and remove contaminants from your genome.
+FCS-adaptor detects adaptor and vector contamination in genome sequences. FCS-adaptor is a high-throughput implementation of [NCBI VecScreen](https://www.ncbi.nlm.nih.gov/tools/vecscreen/about/). The FCS-adaptor executable retrieves a Docker or Singularity container and runs a pipeline to screen input sequences against a non-redudant database of adaptors and vectors using stringent BLAST searches and remove contaminants from your genome.
 
 FCS-adaptor removes terminal and internal matches to foreign sequences. Sequences identified as mostly adaptor/vector are removed entirely. FCS-adaptor produces a tabular output with details on the contaminant sequences identified as well as a cleaned FASTA.
 
