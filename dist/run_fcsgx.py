@@ -12,7 +12,7 @@ import hashlib
 
 CONTAINER = "run_gx"
 DEFAULT_CONTAINER_DB = "/app/db/gxdb"
-DEFAULT_DOCKER_IMAGE = "ncbi/cgr-fcs-genome:v1alpha1-latest"
+DEFAULT_DOCKER_IMAGE = "ncbi/cgr-fcs-genome:beta"
 DEFAULT_SINGULARITY_IMAGE = "gx-develop-latest.sif"
 # FILE_MANIFEST = "sing-image.manifest"
 SINGULARITY_FTP_SITE = "https://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/FCS/releases/beta"
