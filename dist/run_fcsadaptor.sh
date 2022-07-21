@@ -1,8 +1,16 @@
 #!/bin/bash
 
+# this script assumes you are logged in and in the ncbi-seqplus-rodr-fscr-res project
+# for an example file use
+# gsutil cp gs://cgr-fcs-dev-data/fscreen_samples/WGS4104339SUB1073965_1130221413.validated.fna ./fastas/
 
 SCRIPT_NAME=$0
+#DOCKER_IMAGE=us-east4-docker.pkg.dev/ncbi-seqplus-rodr-build-res/ncbi-cgr/fcs/av_screen_x:develop-latest
 DOCKER_IMAGE=ncbi/cgr-fcs-adaptor:v1alpha1-latest
+SINGULARITY_IMAGE=fcs-adaptor.sif
+SIF_FTP="https://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/FCS/releases/beta/$SINGULARITY_IMAGE"
+CONTAINER_ENGINE="docker"
+TMP_SINGULARITY_IMAGE=$SINGULARITY_IMAGE
 
 usage()
 {
@@ -14,13 +22,15 @@ Options:
 
     --help
 
-    --fasta-input <file>      input FASTA file (required)
+    --fasta-input <file>          input FASTA file (required)
 
-    --output-dir <directory>  output path (required)
+    --output-dir <directory>      output path (required)
+
+    --container-engine <string>  default docker
 
     Taxonomy (exactly one required):
-    --prok                    prokaryotes
-    --euk                     eukaryotes
+    --prok                        prokaryotes
+    --euk                         eukaryotes
 
 EOF
     exit $1
@@ -45,6 +55,7 @@ do
       ;;
     --image)
       DOCKER_IMAGE="$2"
+      SINGULARITY_IMAGE="$2"
       shift
       ;;
     --euk)
@@ -53,6 +64,10 @@ do
     --prok)
       TAX=--prok
       ;;
+    --container-engine)
+        CONTAINER_ENGINE=$2
+        shift
+        ;;
     -*)
       echo "invalid option : '$1'"
       usage 10
@@ -90,15 +105,30 @@ FASTA_FILENAME=$(basename "$EXPANDED_FASTA")
 # this only needs set one time, but gives a misleading error message if not done
 #gcloud auth configure-docker us-east4-docker.pkg.dev
 
-$DOCKER pull $DOCKER_IMAGE
-CONTAINER=run_av_screen_x
+if [[ ${CONTAINER_ENGINE} == "docker" ]]
+then
+  $DOCKER pull $DOCKER_IMAGE
+  CONTAINER=run_av_screen_x
 
-function finish {
-  $DOCKER stop $CONTAINER
-  $DOCKER rm $CONTAINER
-}
-trap finish EXIT
+  function finish {
+    $DOCKER stop $CONTAINER
+    $DOCKER rm $CONTAINER
+  }
+  trap finish EXIT
 
-$DOCKER run --init --name $CONTAINER --user "$(id -u):$(id -g)" -v $FASTA_DIRNAME:/sample-volume/ \
-    -v $EXPANDED_OUTPUT:/output-volume/ $DOCKER_IMAGE \
-    /app/fcs/bin/av_screen_x -o /output-volume/ $TAX /sample-volume/$FASTA_FILENAME
+  $DOCKER run --init --name $CONTAINER --user "$(id -u):$(id -g)" -v $FASTA_DIRNAME:/sample-volume/ \
+      -v $EXPANDED_OUTPUT:/output-volume/ $DOCKER_IMAGE \
+      /app/fcs/bin/av_screen_x -o /output-volume/ $TAX /sample-volume/$FASTA_FILENAME
+
+elif [[ ${CONTAINER_ENGINE} == "singularity" ]]
+then
+  if [[ "$TMP_SINGULARITY_IMAGE" == "$SINGULARITY_IMAGE" ]]
+  then
+    wget $SIF_FTP
+  fi
+  singularity run   $CONTAINER --bind $FASTA_DIRNAME:/sample-volume/ \
+      --bind $EXPANDED_OUTPUT:/output-volume/ $SINGULARITY_IMAGE \
+      /app/fcs/bin/av_screen_x -o /output-volume/ $TAX /sample-volume/$FASTA_FILENAME
+else
+    echo "No container engine ${CONTAINER_ENGINE}"
+fi
