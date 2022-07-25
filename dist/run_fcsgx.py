@@ -15,7 +15,7 @@ DEFAULT_CONTAINER_DB = "/app/db/gxdb"
 DEFAULT_DOCKER_IMAGE = "ncbi/fcs-gx:0.2.1"
 DEFAULT_SINGULARITY_IMAGE = "gx-develop-latest.sif"
 # FILE_MANIFEST = "sing-image.manifest"
-SINGULARITY_FTP_SITE = "https://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/FCS/releases/beta"
+SINGULARITY_FTP_SITE = "https://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/FCS/releases/0.2.1"
 GX_BIN_DIR = Path("/app/bin")
 
 
