@@ -6,9 +6,9 @@
 
 SCRIPT_NAME=$0
 #DOCKER_IMAGE=us-east4-docker.pkg.dev/ncbi-seqplus-rodr-build-res/ncbi-cgr/fcs/av_screen_x:develop-latest
-DOCKER_IMAGE=ncbi/cgr-fcs-adaptor:v1alpha1-latest
+DOCKER_IMAGE=ncbi/fcs-adaptor:latest
 SINGULARITY_IMAGE=fcs-adaptor.sif
-SIF_FTP="https://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/FCS/releases/beta/$SINGULARITY_IMAGE"
+SIF_FTP="https://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/FCS/releases/0.2.1/$SINGULARITY_IMAGE"
 CONTAINER_ENGINE="docker"
 TMP_SINGULARITY_IMAGE=$SINGULARITY_IMAGE
 
