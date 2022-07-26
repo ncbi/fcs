@@ -13,12 +13,11 @@ import hashlib
 CONTAINER = "run_gx"
 DEFAULT_CONTAINER_DB = "/app/db/gxdb"
 DEFAULT_VERSION = "0.2.1"
-DEFAULT_DOCKER_IMAGE = "ncbi/fcs-gx:${DEFAULT_VERSION}"
-DEFAULT_SINGULARITY_IMAGE = "fcs-gx.${DEFAULT_VERSION}.sif"
+DEFAULT_DOCKER_IMAGE = f"ncbi/fcs-gx:{DEFAULT_VERSION}"
+DEFAULT_SINGULARITY_IMAGE = f"fcs-gx.{DEFAULT_VERSION}.sif"
 # FILE_MANIFEST = "sing-image.manifest"
-SINGULARITY_FTP_SITE = "https://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/FCS/releases/${DEFAULT_VERSION}"
+SINGULARITY_FTP_SITE = f"https://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/FCS/releases/{DEFAULT_VERSION}"
 GX_BIN_DIR = Path("/app/bin")
-
 
 # from retrieve_db.py
 def compute_md5hash_by_chunk(filename):
