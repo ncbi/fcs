@@ -12,10 +12,11 @@ import hashlib
 
 CONTAINER = "run_gx"
 DEFAULT_CONTAINER_DB = "/app/db/gxdb"
-DEFAULT_DOCKER_IMAGE = "ncbi/fcs-gx:0.2.1"
-DEFAULT_SINGULARITY_IMAGE = "gx-develop-latest.sif"
+DEFAULT_VERSION = "0.2.1"
+DEFAULT_DOCKER_IMAGE = "ncbi/fcs-gx:${DEFAULT_VERSION}"
+DEFAULT_SINGULARITY_IMAGE = "fcs-gx.${DEFAULT_VERSION}.sif"
 # FILE_MANIFEST = "sing-image.manifest"
-SINGULARITY_FTP_SITE = "https://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/FCS/releases/beta"
+SINGULARITY_FTP_SITE = "https://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/FCS/releases/${DEFAULT_VERSION}"
 GX_BIN_DIR = Path("/app/bin")
 
 
