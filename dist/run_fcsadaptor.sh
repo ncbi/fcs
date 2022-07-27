@@ -3,10 +3,10 @@
 SCRIPT_NAME=$0
 DEFAULT_VERSION="0.2.1"
 DOCKER_IMAGE=ncbi/fcs-adaptor:${DEFAULT_VERSION}
-SINGULARITY_IMAGE=fcs-adaptor.${DEFAULT_VERSION}.sif
-SIF_FTP="https://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/FCS/releases/${DEFAULT_VERSION}/${SINGULARITY_IMAGE}"
+#SINGULARITY_IMAGE=fcs-adaptor.${DEFAULT_VERSION}.sif
+SINGULARITY_IMAGE=
+#SIF_FTP="https://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/FCS/releases/${DEFAULT_VERSION}/${SINGULARITY_IMAGE}"
 CONTAINER_ENGINE="docker"
-TMP_SINGULARITY_IMAGE=$SINGULARITY_IMAGE
 
 usage()
 {
@@ -17,12 +17,10 @@ Usage:
 Options:
 
     --help
-
     --fasta-input <file>          input FASTA file (required)
-
     --output-dir <directory>      output path (required)
-
-    --container-engine <string>  default docker
+    --image <file>                dockerhub address or sif file (required for singularity only)
+    --container-engine <string>   default docker
 
     Taxonomy (exactly one required):
     --prok                        prokaryotes
@@ -118,13 +116,14 @@ then
 
 elif [[ ${CONTAINER_ENGINE} == "singularity" ]]
 then
-  if [[ "$TMP_SINGULARITY_IMAGE" == "$SINGULARITY_IMAGE" ]]
+  if [[ -n "$SINGULARITY_IMAGE" ]]
   then
-    wget $SIF_FTP
+    singularity run $CONTAINER --bind $FASTA_DIRNAME:/sample-volume/ \
+        --bind $EXPANDED_OUTPUT:/output-volume/ $SINGULARITY_IMAGE \
+        /app/fcs/bin/av_screen_x -o /output-volume/ $TAX /sample-volume/$FASTA_FILENAME
+  else
+    echo "--image is required when specifying --container-engine singularity"
   fi
-  singularity run   $CONTAINER --bind $FASTA_DIRNAME:/sample-volume/ \
-      --bind $EXPANDED_OUTPUT:/output-volume/ $SINGULARITY_IMAGE \
-      /app/fcs/bin/av_screen_x -o /output-volume/ $TAX /sample-volume/$FASTA_FILENAME
 else
     echo "No container engine ${CONTAINER_ENGINE}"
 fi
