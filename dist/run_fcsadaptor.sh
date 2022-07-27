@@ -1,14 +1,10 @@
 #!/bin/bash
 
-# this script assumes you are logged in and in the ncbi-seqplus-rodr-fscr-res project
-# for an example file use
-# gsutil cp gs://cgr-fcs-dev-data/fscreen_samples/WGS4104339SUB1073965_1130221413.validated.fna ./fastas/
-
 SCRIPT_NAME=$0
-#DOCKER_IMAGE=us-east4-docker.pkg.dev/ncbi-seqplus-rodr-build-res/ncbi-cgr/fcs/av_screen_x:develop-latest
-DOCKER_IMAGE=ncbi/fcs-adaptor:latest
-SINGULARITY_IMAGE=fcs-adaptor.sif
-SIF_FTP="https://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/FCS/releases/0.2.1/$SINGULARITY_IMAGE"
+DEFAULT_VERSION="0.2.1"
+DOCKER_IMAGE=ncbi/fcs-adaptor:${DEFAULT_VERSION}
+SINGULARITY_IMAGE=fcs-adaptor.${DEFAULT_VERSION}.sif
+SIF_FTP="https://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/FCS/releases/${DEFAULT_VERSION}/${SINGULARITY_IMAGE}"
 CONTAINER_ENGINE="docker"
 TMP_SINGULARITY_IMAGE=$SINGULARITY_IMAGE
 
