@@ -10,7 +10,7 @@ FCS-adaptor removes terminal and internal matches to foreign sequences. Sequence
 Please read the [wiki](https://github.com/ncbi/fcs/wiki/FCS-adaptor) for instructions on how to run FCS-adaptor.
 
 ## FCS-GX
-FCS-GX detects contamination from foreign organisms in genome sequences using the GX (Genome Cross-species) aligner. The FCS-GX executable retrieves a Docker or Singularity container and runs a pipeline to align sequences to a large database of NCBI genomes through modified k-mer seeds and assign a most likely taxonomic division.
+FCS-GX detects contamination from foreign organisms in genome sequences using the genome cross-species aligner (GX). The FCS-GX executable retrieves a Docker or Singularity container and runs a pipeline to align sequences to a large database of NCBI genomes through modified k-mer seeds and assign a most likely taxonomic division.
 
 FCS-GX classifies sequences as contaminant when their taxonomic assignment is different from the user provided taxonomic identifier. A contamination summary provides an overview of observed contaminant divisions, counts, and total sizes, and an action report provides details and recommended actions for each problematic sequence. 
 
