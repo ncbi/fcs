@@ -1,6 +1,6 @@
 LICENSING TERMS
 
-NCBI FCS tools
+NCBI FCS tool suite
 
 This software authored by NCBI is a "United States
 Government Work" under the terms of the United States Copyright
