@@ -13,7 +13,7 @@ import hashlib
 
 CONTAINER = "run_gx"
 DEFAULT_CONTAINER_DB = "/app/db/gxdb"
-DEFAULT_VERSION = "0.2.1"
+DEFAULT_VERSION = "0.2.3"
 DEFAULT_DOCKER_IMAGE = f"ncbi/fcs-gx:{DEFAULT_VERSION}"
 DEFAULT_SINGULARITY_IMAGE = f"fcs-gx.{DEFAULT_VERSION}.sif"
 # FILE_MANIFEST = "sing-image.manifest"
@@ -95,7 +95,8 @@ class RunGX:
             extra_docker_args = [mount_arg, str(expanded_gxdb_disk) + ":/db-disk-volume/"]
             extra_db_args = ["--gx-db-disk", "/db-disk-volume/"]
 
-        extra_docker_args.extend(["--tty"])
+        if container_engine == "docker":
+            extra_docker_args.extend(["--tty"])
 
         retrieve_db_args = [
             container_engine,
