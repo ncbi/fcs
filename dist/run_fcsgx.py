@@ -39,6 +39,11 @@ class RunGX:
         self.args = args
         self.args.container_db = Path(args.container_db)
 
+    def safe_exec(self, args):
+        if self.args.debug:
+            print(" ".join(args))
+        subprocess.run(args, shell=False, check=True, text=True, stdout=sys.stdout, stderr=sys.stderr)
+
     def retrieve_singularity_image(self, local_filename):
         ctx = ssl.create_default_context()
         ctx.check_hostname = False
@@ -100,7 +105,7 @@ class RunGX:
 
         retrieve_db_args = [
             container_engine,
-            "run",
+            "run" if container_engine == "docker" else "exec",
             mount_arg,
             str(expanded_gxdb) + ":" + str(self.args.container_db),
             *extra_docker_args,
@@ -111,11 +116,7 @@ class RunGX:
             str(self.args.container_db / gxdb_name),
             *extra_db_args,
         ]
-        subprocess.run(
-            retrieve_db_args,
-            shell=False,
-            check=True,
-        )
+        self.safe_exec(retrieve_db_args)
 
     def run_gx(self):
         expanded_gxdb = Path(os.path.realpath(os.path.dirname(self.args.gx_db)))
@@ -137,7 +138,7 @@ class RunGX:
 
         docker_args = [
             container_engine,
-            "run",
+            "run" if container_engine == "docker" else "exec",
             mount_arg,
             str(expanded_gxdb) + ":" + str(self.args.container_db),
             mount_arg,
@@ -167,9 +168,7 @@ class RunGX:
         if self.args.env_file:
             docker_args.extend(["--env-file", str(Path("/sample-volume/") / self.args.env_file)])
 
-        if self.args.debug:
-            print(docker_args)
-        subprocess.run(docker_args, shell=False, check=True)
+        self.safe_exec(docker_args)
 
     def run_verify_checksums(self):
         expanded_gxdb = Path(os.path.realpath(os.path.dirname(self.args.gx_db)))
@@ -186,7 +185,7 @@ class RunGX:
 
         docker_args = [
             container_engine,
-            "run",
+            "run" if container_engine == "docker" else "exec",
             mount_arg,
             str(expanded_gxdb) + ":" + str(self.args.container_db),
             docker_image,
@@ -196,9 +195,7 @@ class RunGX:
             str(self.args.container_db / gxdb_name),
             "--debug",
         ]
-        if self.args.debug:
-            print(docker_args)
-        subprocess.run(docker_args, shell=False, check=True)
+        self.safe_exec(docker_args)
 
     def run(self):
         self.run_retrieve_db()
