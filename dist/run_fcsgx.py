@@ -13,7 +13,7 @@ import hashlib
 
 CONTAINER = "run_gx"
 DEFAULT_CONTAINER_DB = "/app/db/gxdb"
-DEFAULT_VERSION = "0.2.3"
+DEFAULT_VERSION = "0.3.0"
 DEFAULT_DOCKER_IMAGE = f"ncbi/fcs-gx:{DEFAULT_VERSION}"
 DEFAULT_SINGULARITY_IMAGE = f"fcs-gx.{DEFAULT_VERSION}.sif"
 # FILE_MANIFEST = "sing-image.manifest"
@@ -116,6 +116,8 @@ class RunGX:
             str(self.args.container_db / gxdb_name),
             *extra_db_args,
         ]
+        if container_engine == "docker":
+            retrieve_db_args.insert(2, "--rm")
         self.safe_exec(retrieve_db_args)
 
     def run_gx(self):
@@ -159,6 +161,8 @@ class RunGX:
             "--split-fasta=" + ("T" if self.args.split_fasta else "F"),
         ]
 
+        if container_engine == "docker":
+            docker_args.insert(2, "--rm")
         if self.args.out_basename:
             docker_args.extend(["--out-basename", self.args.out_basename])
         if self.args.blast_div:
@@ -195,6 +199,9 @@ class RunGX:
             str(self.args.container_db / gxdb_name),
             "--debug",
         ]
+        if container_engine == "docker":
+            docker_args.insert(2, "--rm")
+
         self.safe_exec(docker_args)
 
     def run(self):
