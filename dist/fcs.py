@@ -34,8 +34,8 @@ import shutil
 import json
 
 CONTAINER = "run_gx"
-DEFAULT_CONTAINER_DB = Path("/app/db/gxdb/")
-DEFAULT_VERSION = "0.4.0"
+DEFAULT_CONTAINER_DB = "/app/db/gxdb/"
+DEFAULT_VERSION = "0.5.0"
 DEFAULT_DOCKER_IMAGE = f"ncbi/fcs-gx:{DEFAULT_VERSION}"
 GX_BIN_DIR = Path("/app/bin")
 
@@ -143,11 +143,33 @@ class RunFCS:
             if GlobalStat.container_engine == "singularity"
             else ""
         )
+        self.directory_volume_map = {}
+
+    def substitute_file_argument(self, cmd, argument, pos, volume, create_dir=False):
+        self.directory_volume_map[volume] = Path(os.path.abspath(os.path.dirname(argument)))
+        file_name = os.path.basename(argument)
+        replacement = str(Path(volume) / file_name)
+        if create_dir:
+            os.makedirs(self.directory_volume_map[volume], exist_ok=True)
+        return cmd[:pos] + cmd[pos:].replace(argument, replacement, 1)
+
+    def substitute_directory_argument(self, cmd, argument, pos, volume, create_dir=False):
+        self.directory_volume_map[volume] = Path(os.path.realpath(argument))
+        if create_dir:
+            os.makedirs(self.directory_volume_map[volume], exist_ok=True)
+        return cmd[:pos] + cmd[pos:].replace(argument, volume, 1)
 
     def safe_exec(self, args):
         if self.args.debug:
-            print(" ".join(args))
-        subprocess.run(args, shell=False, check=True, text=True, stdout=sys.stdout, stderr=sys.stderr)
+            print("safe_exec: ", " ".join(args))
+        if not self.args.dry_run:
+            subprocess.run(args, shell=False, check=True, text=True, stdout=sys.stdout, stderr=sys.stderr)
+
+    def make_dirs(self, path, exist_ok):
+        if self.args.debug:
+            print("make_dirs: ", path, exist_ok)
+        if not self.args.dry_run:
+            os.makedirs(path, exist_ok=exist_ok)
 
     def get_db_build_date(self):
         try:
@@ -158,7 +180,7 @@ class RunFCS:
                     GlobalStat.gxdb = file_content["build-date"]
         except Exception as e:  # pylint: disable=W0703
             if self.args.debug:
-                print(f"Failed to exctract the database's build-date: {e}")
+                print(f"Failed to extract the database's build-date: {e}")
 
     def run_sync_files(self):
         extra_docker_arg = []
@@ -173,11 +195,8 @@ class RunFCS:
             *extra_docker_arg,
         ]
 
-        if hasattr(self.args, "gx_db"):
-            sync_files_args += [self.mount_arg, str(self.args.gx_db) + ":" + str(DEFAULT_CONTAINER_DB)]
-
-        if hasattr(self.args, "mft_dir"):
-            sync_files_args += [self.mount_arg, str(self.args.mft_dir) + ":" + "/mft-volume/"]
+        for volume, path in self.directory_volume_map.items():
+            sync_files_args += [self.mount_arg, str(path) + ":" + volume]
 
         sync_files_args += [
             self.args.docker_image,
@@ -203,21 +222,8 @@ class RunFCS:
         if GlobalStat.container_engine == "docker":
             docker_args += ["-i", "--rm"]
 
-        # add --env-envelop for both docker and
-        if hasattr(self.args, "gx_db"):
-            docker_args += [self.mount_arg, str(self.args.gx_db) + ":" + str(DEFAULT_CONTAINER_DB)]
-
-        if hasattr(self.args, "fasta"):
-            docker_args += [self.mount_arg, str(self.args.fasta) + ":" + "/sample-volume/"]
-
-        if hasattr(self.args, "out_dir"):
-            docker_args += [self.mount_arg, str(self.args.out_dir) + ":" + "/output-volume/"]
-
-        if hasattr(self.args, "report"):
-            docker_args += [self.mount_arg, str(self.args.report) + ":" + "/report-volume/"]
-
-        if hasattr(self.args, "contam_fasta_out"):
-            docker_args += [self.mount_arg, str(self.args.contam_fasta_out) + ":" + "/contam-out-volume/"]
+        for volume, path in self.directory_volume_map.items():
+            docker_args += [self.mount_arg, str(path) + ":" + volume]
 
         if GlobalStat.mode == "screen":
             docker_args += [
@@ -241,34 +247,18 @@ class RunFCS:
         cmd = self.joined_extra_args
         argument, pos = find_argument(cmd, "--gx-db")
         if argument is not None:
-            # build replacement string
-            self.args.gx_db = Path(os.path.abspath(os.path.dirname(argument)))
-            gxdb_name = os.path.basename(argument)
-            GlobalStat.gx_db_path = self.args.gx_db / gxdb_name
-            replacement = str(DEFAULT_CONTAINER_DB / gxdb_name)
-            cmd = cmd[:pos] + cmd[pos:].replace(argument, replacement, 1)
+            cmd = self.substitute_file_argument(cmd, argument, pos, DEFAULT_CONTAINER_DB)
+            GlobalStat.gx_db_path = Path(os.path.abspath(os.path.dirname(argument))) / os.path.basename(argument)
 
         argument, pos = find_argument(cmd, "--fasta")
-        # add arguments section
         if argument is not None:
-            # build replacement string
-            self.args.fasta = Path(os.path.abspath(os.path.dirname(argument)))
-            fasta_name = os.path.basename(argument)
-            # fasta_name = expanded_fasta.name
-            replacement = str(Path("/sample-volume/") / fasta_name)
-            cmd = cmd[:pos] + cmd[pos:].replace(argument, replacement, 1)
+            cmd = self.substitute_file_argument(cmd, argument, pos, "/sample-volume/")
 
         argument, pos = find_argument(cmd, "--out-dir")
-        # add arguments section
         if argument is not None:
-            # build replacement string
-            self.args.out_dir = Path(os.path.realpath(argument))
-            replacement = "/output-volume/"
-            cmd = cmd[:pos] + cmd[pos:].replace(argument, replacement, 1)
-            # creating the output directory for the user if it does not already exist
-            os.makedirs(self.args.out_dir, exist_ok=True)
+            cmd = self.substitute_directory_argument(cmd, argument, pos, "/output-volume/", True)
         elif "--help" not in cmd:
-            self.args.out_dir = Path(os.path.realpath("."))
+            self.directory_volume_map["/output-volume/"] = Path(os.path.realpath("."))
             cmd += " --out-dir=/output-volume/"
 
         self.joined_extra_args = cmd
@@ -277,14 +267,8 @@ class RunFCS:
         cmd = self.joined_extra_args
         argument, pos = find_argument(cmd, "--dir")
         if argument is not None:
-            # build replacement string
-            self.args.gx_db = Path(os.path.realpath(argument))
-            GlobalStat.gx_db_path = self.args.gx_db
-            # gxdb_name = os.path.basename(argument)
-            replacement = str(DEFAULT_CONTAINER_DB)
-            cmd = cmd[:pos] + cmd[pos:].replace(argument, replacement, 1)
-            # creating the output directory for the user if it does not already exist
-            os.makedirs(self.args.gx_db, exist_ok=True)
+            cmd = self.substitute_directory_argument(cmd, argument, pos, DEFAULT_CONTAINER_DB, True)
+            GlobalStat.gx_db_path = Path(os.path.realpath(argument))
         elif "--help" not in cmd:
             print("Error: database path not specified")
             print('Please specify "--dir=path/to/db"')
@@ -299,10 +283,7 @@ class RunFCS:
             self.parser.print_usage()
             sys.exit()
         elif argument is not None and Path(argument).exists():
-            self.args.mft_dir = Path(os.path.abspath(os.path.dirname(argument)))
-            mft_name = os.path.basename(argument)
-            replacement = str(Path("/mft-volume/") / mft_name)
-            cmd = cmd[:pos] + cmd[pos:].replace(argument, replacement, 1)
+            cmd = self.substitute_file_argument(cmd, argument, pos, "/mft-volume/")
 
         self.joined_extra_args = cmd
 
@@ -312,21 +293,11 @@ class RunFCS:
         if argument is None:
             argument, pos = find_argument(cmd, "-i")
         if argument is not None:
-            # build replacement string
-            self.args.fasta = Path(os.path.abspath(os.path.dirname(argument)))
-            fasta_name = os.path.basename(argument)
-            # fasta_name = expanded_fasta.name
-            replacement = str(Path("/sample-volume/") / fasta_name)
-            cmd = cmd[:pos] + cmd[pos:].replace(argument, replacement, 1)
+            cmd = self.substitute_file_argument(cmd, argument, pos, "/sample-volume/")
 
         argument, pos = find_argument(cmd, "--action-report")
         if argument is not None:
-            # build replacement string
-            self.args.report = Path(os.path.abspath(os.path.dirname(argument)))
-            report_name = os.path.basename(argument)
-            # fasta_name = expanded_fasta.name
-            replacement = str(Path("/report-volume/") / report_name)
-            cmd = cmd[:pos] + cmd[pos:].replace(argument, replacement, 1)
+            cmd = self.substitute_file_argument(cmd, argument, pos, "/report-volume/")
         elif "--help" not in cmd:
             print("Error: action report file is required")
             print('Please specify "--action-report=path/to/action-report-file"')
@@ -337,23 +308,11 @@ class RunFCS:
             argument, pos = find_argument(cmd, "-o")
         # add arguments section
         if argument is not None:
-            # build replacement string
-            self.args.out_dir = Path(os.path.abspath(os.path.dirname(argument)))
-            output_name = os.path.basename(argument)
-            replacement = str(Path("/output-volume/") / output_name)
-            cmd = cmd[:pos] + cmd[pos:].replace(argument, replacement, 1)
-            # creating the output directory for the user if it does not already exist
-            os.makedirs(self.args.out_dir, exist_ok=True)
+            cmd = self.substitute_file_argument(cmd, argument, pos, "/output-volume/", True)
 
         argument, pos = find_argument(cmd, "--contam-fasta-out")
         if argument is not None:
-            # build replacement string
-            self.args.contam_fasta_out = Path(os.path.abspath(os.path.dirname(argument)))
-            contam_fasta_name = os.path.basename(argument)
-            replacement = str(Path("/contam-out-volume/") / contam_fasta_name)
-            cmd = cmd[:pos] + cmd[pos:].replace(argument, replacement, 1)
-            # creating the output directory for the user if it does not already exist
-            os.makedirs(self.args.contam_fasta_out, exist_ok=True)
+            cmd = self.substitute_file_argument(cmd, argument, pos, "/contam-out-volume/", True)
 
         self.joined_extra_args = cmd
 
@@ -411,6 +370,12 @@ def configure_parser(parser):
         default=None,
         help="file with environment variables",
     )
+    parser.add_argument(
+        "--dry-run",
+        dest="dry_run",
+        action="store_true",
+        help="do not actually do anything",
+    )
     return parser
 
 
@@ -460,7 +425,7 @@ def main() -> int:
         parser.print_usage()
         sys.exit()
 
-    GlobalStat.opt_in = (not args.no_report_analytics) and ("--help" not in extra_args)
+    GlobalStat.opt_in = (not args.no_report_analytics) and ("--help" not in extra_args) and (not args.dry_run)
     if hasattr(args, "cmd"):
         GlobalStat.ncbi_op = args.cmd
     retcode = 0
