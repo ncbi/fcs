@@ -1,5 +1,0 @@
-#accession      length  action  range   name
-KPN158_ctg010   251170  ACTION_TRIM     1..27   CONTAMINATION_SOURCE_TYPE_ADAPTOR:NGB01096.1:Rubicon Genomics ThruPLEX DNA-seq dual-index D508
-KPN158_ctg041   1411    ACTION_TRIM     81..150 CONTAMINATION_SOURCE_TYPE_ADAPTOR:NGB00753.1:Illumina TruSeq DNA HT and RNA HT i5 index D507 adapter (Oligonucleotide sequence copyright 2007-2012 Illumina, Inc. All rights reserved.)
-KPN158_ctg047   1099    ACTION_TRIM     1047..1099      CONTAMINATION_SOURCE_TYPE_ADAPTOR:NGB01092.1:Rubicon Genomics ThruPLEX DNA-seq dual-index D504
-KPN158_ctg049   1061    ACTION_TRIM     1..67   CONTAMINATION_SOURCE_TYPE_ADAPTOR:NGB00753.1:Illumina TruSeq DNA HT and RNA HT i5 index D507 adapter (Oligonucleotide sequence copyright 2007-2012 Illumina, Inc. All rights reserved.)
