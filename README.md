@@ -3,18 +3,17 @@
 The NCBI Foreign Contamination Screen (FCS) is a tool suite for identifying and removing contaminant sequences in genome assemblies. Contaminants are defined as sequences in a dataset that do not originate from the biological source organism and can arise from a variety of environmental and laboratory sources. FCS will help you remove contaminants from genomes before submission to GenBank.
 
 ## FCS-adaptor
-FCS-adaptor detects adaptor and vector contamination in genome sequences. FCS-adaptor is a high-throughput implementation of [NCBI VecScreen](https://www.ncbi.nlm.nih.gov/tools/vecscreen/about/). The FCS-adaptor executable retrieves a Docker or Singularity container and runs a pipeline to screen input sequences against a non-redudant database of adaptors and vectors using stringent BLAST searches and remove contaminants from your genome.
+FCS-adaptor detects adaptor and vector contamination in genome sequences. FCS-adaptor is a high-throughput implementation of [NCBI VecScreen](https://www.ncbi.nlm.nih.gov/tools/vecscreen/about/). The FCS-adaptor executable retrieves a Docker or Singularity container and runs a pipeline to screen input sequences against a database of adaptors and vectors using stringent BLAST searches.
 
-FCS-adaptor removes terminal and internal matches to foreign sequences. Sequences identified as mostly adaptor/vector are removed entirely. FCS-adaptor produces a tabular output with details on the contaminant sequences identified as well as a cleaned FASTA.
-
-Please read the [wiki](https://github.com/ncbi/fcs/wiki/FCS-adaptor) for instructions on how to run FCS-adaptor.
+Please read the [wiki](https://github.com/ncbi/fcs/wiki/FCS-adaptor-quickstart) for instructions on how to run FCS-adaptor.
 
 ## FCS-GX
-FCS-GX detects contamination from foreign organisms in genome sequences using the genome cross-species aligner (GX). The FCS-GX executable retrieves a Docker or Singularity container and runs a pipeline to align sequences to a large database of NCBI genomes through modified k-mer seeds and assign a most likely taxonomic division.
+FCS-GX detects contamination from foreign organisms in genome sequences using the genome cross-species aligner (GX). The FCS-GX executable retrieves a Docker or Singularity container and runs a pipeline to align sequences to a large database of NCBI genomes through modified k-mer seeds and assign a most likely taxonomic division. FCS-GX classifies sequences as contaminant when their taxonomic assignment is different from the user-provided taxonomic identifier. 
 
-FCS-GX classifies sequences as contaminant when their taxonomic assignment is different from the user provided taxonomic identifier. A contamination summary provides an overview of observed contaminant divisions, counts, and total sizes, and an action report provides details and recommended actions for each problematic sequence. 
+Please read the [wiki](https://github.com/ncbi/fcs/wiki/FCS-GX-quickstart) for instructions on how to run FCS-GX.
 
-Please read the [wiki](https://github.com/ncbi/fcs/wiki/FCS-GX) for instructions on how to run FCS-GX.
+## NEWS
+:exclamation: FCS is live on on [Galaxy](https://usegalaxy.org/)! Tutorial [here](https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/ncbi-fcs/tutorial.html).
 
 ## REFERENCES
 
@@ -23,7 +22,27 @@ Astashyn A, Tvedte ES, Sweeney D, Sapojnikov V, Bouk N, Joukov V, Mozes E, Strop
 
 [Read the FCS-GX paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-024-03198-7)
 
-### FUNDING
+## LICENSING
+The NCBI FCS tool suite software authored by NCBI is a "United States
+Government Work" under the terms of the United States Copyright
+Act. It was written as part of the authors' official duties as United
+States Government employees and thus cannot be copyrighted. This
+software is freely available to the public for use. The National
+Library of Medicine and the U.S. Government have not placed any
+restriction on its use or reproduction.
+
+Although all reasonable efforts have been taken to ensure the accuracy
+and reliability of the software and data, the NLM and the
+U.S. Government do not and cannot warrant the performance or results
+that may be obtained by using this software or data. The NLM and the
+U.S. Government disclaim all warranties, express or implied, including
+warranties of performance, merchantability or fitness for any
+particular purpose.
+
+Please cite NCBI in any work or product based on this material.
+
+## FUNDING
 This work was supported by the National Center for Biotechnology Information of the National Library of Medicine (NLM), National Institutes of Health.
 
 FCS is part of the [NIH Comparative Genomics Resource (CGR)](https://www.ncbi.nlm.nih.gov/comparative-genomics-resource/), an NLM project to establish an ecosystem to facilitate reliable comparative genomics analyses for all eukaryotic organisms.
+
