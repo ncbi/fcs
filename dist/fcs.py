@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# pylint: disable=C0301,C0114,C0103,C0116,R0913,R0914,W0511,R1732,R0916
 """
                           PUBLIC DOMAIN NOTICE
              National Center for Biotechnology Information
@@ -35,7 +37,7 @@ import json
 
 CONTAINER = "run_gx"
 DEFAULT_CONTAINER_DB = "/app/db/gxdb/"
-DEFAULT_VERSION = "0.5.0"
+DEFAULT_VERSION = "0.5.4"
 DEFAULT_DOCKER_IMAGE = f"ncbi/fcs-gx:{DEFAULT_VERSION}"
 GX_BIN_DIR = Path("/app/bin")
 
@@ -425,7 +427,36 @@ def main() -> int:
         parser.print_usage()
         sys.exit()
 
-    GlobalStat.opt_in = (not args.no_report_analytics) and ("--help" not in extra_args) and (not args.dry_run)
+    GlobalStat.opt_in = (
+        not args.no_report_analytics
+        and "--help" not in extra_args
+        and not args.dry_run
+        and os.getenv("DO_NOT_TRACK", "0") == "0"               # GP-37725
+        and os.getenv("NCBI_FCS_REPORT_ANALYTICS", "1") == "1"  # GP-37725
+    )
+
+    if (  # If none of the banner-switches are set, display the banner. GP-37725
+        not args.no_report_analytics
+        and os.getenv("DO_NOT_TRACK") is None
+        and os.getenv("NCBI_FCS_REPORT_ANALYTICS") is None
+    ):
+        print("""
+--------------------------------------------------------------------------------------------
+
+NCBI collects limited usage data for each run of FCS by default. To disable usage reporting:
+
+python3 fcs.py --no-report-analytics ...
+
+or export NCBI_FCS_REPORT_ANALYTICS=1 to enable,
+or export NCBI_FCS_REPORT_ANALYTICS=0 to disable the reporting.
+
+Usage data collected by NCBI is documented in the FCS privacy notice
+at https://github.com/ncbi/fcs/blob/main/PRIVACY.md
+
+--------------------------------------------------------------------------------------------""",
+            file=sys.stderr)
+
+
     if hasattr(args, "cmd"):
         GlobalStat.ncbi_op = args.cmd
     retcode = 0
