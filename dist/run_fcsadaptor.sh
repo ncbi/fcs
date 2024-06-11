@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SCRIPT_NAME=$0
-DEFAULT_VERSION="0.5.0"
+DEFAULT_VERSION="0.5.4"
 DOCKER_IMAGE=ncbi/fcs-adaptor:${DEFAULT_VERSION}
 SINGULARITY_IMAGE=""
 CONTAINER_ENGINE="docker"
@@ -19,6 +19,7 @@ Options:
     --output-dir <directory>      output path (required)
     --image <file>                dockerhub address or sif file (required for singularity only)
     --container-engine <string>   default docker
+    --debug                       debug
 
     Taxonomy (exactly one required):
     --prok                        prokaryotes
@@ -29,6 +30,7 @@ EOF
 }
 
 DOCKER=docker
+DEBUG=""
 
 while [[ $# -gt 0 ]]
 do
@@ -60,6 +62,11 @@ do
         CONTAINER_ENGINE=$2
         shift
         ;;
+    --debug)
+        DEBUG="--debug"
+        shift
+        ;;
+
     -*)
       echo "invalid option : '$1'"
       usage 10
@@ -108,9 +115,9 @@ then
   }
   trap finish EXIT
 
-  $DOCKER run --init --name $CONTAINER --user "$(id -u):$(id -g)" -v $FASTA_DIRNAME:/sample-volume/ \
+  $DOCKER run --rm --init --name $CONTAINER --user "$(id -u):$(id -g)" -v $FASTA_DIRNAME:/sample-volume/ \
       -v $EXPANDED_OUTPUT:/output-volume/ $DOCKER_IMAGE \
-      /app/fcs/bin/av_screen_x -o /output-volume/ $TAX /sample-volume/$FASTA_FILENAME
+      /app/fcs/bin/av_screen_x -o /output-volume/ $TAX /sample-volume/$FASTA_FILENAME $DEBUG
 
 elif [[ ${CONTAINER_ENGINE} == "singularity" ]]
 then
@@ -118,7 +125,7 @@ then
   then
     singularity run $CONTAINER --bind $FASTA_DIRNAME:/sample-volume/ \
         --bind $EXPANDED_OUTPUT:/output-volume/ $SINGULARITY_IMAGE \
-        /app/fcs/bin/av_screen_x -o /output-volume/ $TAX /sample-volume/$FASTA_FILENAME
+        /app/fcs/bin/av_screen_x -o /output-volume/ $TAX /sample-volume/$FASTA_FILENAME $DEBUG
   else
     echo "--image is required when specifying --container-engine singularity"
   fi
