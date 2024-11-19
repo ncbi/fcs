@@ -11,7 +11,7 @@ assignees: ''
 A clear and concise description of what the bug is.
 
 *To Reproduce*
-Copy the full ``run_fcsadaptor.sh``/``run_gx.py`` command used.
+Copy the full ``run_fcsadaptor.sh``/``fcs.py`` command used.
 
 If you are having trouble with your genome, please ensure that you can run the pipeline with one of our test genomes first. If your installation works fine with the sample input, please tell us if you are willing and able to share your genome with us, if asked.
 
