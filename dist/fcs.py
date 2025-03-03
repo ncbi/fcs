@@ -22,11 +22,12 @@ purpose.
 Please cite NCBI in any work or product based on this material.
 
 """
+
+import sys
 import argparse
 import os
 from pathlib import Path
 import subprocess
-import sys
 import urllib.request
 import urllib.parse
 import atexit
@@ -35,9 +36,14 @@ import platform
 import shutil
 import json
 
+assert (
+    sys.version_info.major >= 3 and sys.version_info.minor >= 7
+), f"\nPython version: {sys.version_info}. Require python 3.7 or newer.\n"
+
+
 CONTAINER = "run_gx"
 DEFAULT_CONTAINER_DB = "/app/db/gxdb/"
-DEFAULT_VERSION = "0.5.4"
+DEFAULT_VERSION = "0.5.5"
 DEFAULT_DOCKER_IMAGE = f"ncbi/fcs-gx:{DEFAULT_VERSION}"
 GX_BIN_DIR = Path("/app/bin")
 
@@ -141,9 +147,7 @@ class RunFCS:
         self.mount_arg = (
             "-v"
             if GlobalStat.container_engine == "docker"
-            else "--bind"
-            if GlobalStat.container_engine == "singularity"
-            else ""
+            else "--bind" if GlobalStat.container_engine == "singularity" else ""
         )
         self.directory_volume_map = {}
 
@@ -431,7 +435,7 @@ def main() -> int:
         not args.no_report_analytics
         and "--help" not in extra_args
         and not args.dry_run
-        and os.getenv("DO_NOT_TRACK", "0") == "0"               # GP-37725
+        and os.getenv("DO_NOT_TRACK", "0") == "0"  # GP-37725
         and os.getenv("NCBI_FCS_REPORT_ANALYTICS", "1") == "1"  # GP-37725
     )
 
@@ -440,7 +444,8 @@ def main() -> int:
         and os.getenv("DO_NOT_TRACK") is None
         and os.getenv("NCBI_FCS_REPORT_ANALYTICS") is None
     ):
-        print("""
+        print(
+            """
 --------------------------------------------------------------------------------------------
 
 NCBI collects limited usage data for each run of FCS by default. To disable usage reporting:
@@ -454,8 +459,8 @@ Usage data collected by NCBI is documented in the FCS privacy notice
 at https://github.com/ncbi/fcs/blob/main/PRIVACY.md
 
 --------------------------------------------------------------------------------------------""",
-            file=sys.stderr)
-
+            file=sys.stderr,
+        )
 
     if hasattr(args, "cmd"):
         GlobalStat.ncbi_op = args.cmd
