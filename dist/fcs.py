@@ -138,16 +138,28 @@ class RunFCS:
         self.args, self.extra_args = parser.parse_known_args()
         self.joined_extra_args = " ".join(self.extra_args)
 
-        using_singularity = (
-            self.args.docker_image.endswith(".sif")
-            or self.args.docker_image.startswith("docker://")
-            and shutil.which("singularity")
-        )
-        GlobalStat.container_engine = "singularity" if using_singularity else "docker"
+        # Use explicit container platform if specified
+        if hasattr(self.args, 'container_platform') and self.args.container_platform:
+            GlobalStat.container_engine = self.args.container_platform
+        else:
+            # Fallback to auto-detection based on image name
+            using_singularity = (
+                self.args.docker_image.endswith(".sif")
+                or self.args.docker_image.startswith("docker://")
+                and shutil.which("singularity")
+            )
+            GlobalStat.container_engine = "singularity" if using_singularity else "docker"
+            
+        # Check if specified container engine is available
+        if not shutil.which(GlobalStat.container_engine):
+            print(f"Error: {GlobalStat.container_engine} executable not found in PATH")
+            print(f"Please ensure {GlobalStat.container_engine} is installed and in your PATH, or use --container_platform to specify a different container engine")
+            sys.exit(1)
+            
         self.mount_arg = (
             "-v"
             if GlobalStat.container_engine == "docker"
-            else "--bind" if GlobalStat.container_engine == "singularity" else ""
+            else "--bind" if GlobalStat.container_engine in ["singularity", "apptainer"] else ""
         )
         self.directory_volume_map = {}
 
@@ -358,7 +370,13 @@ def configure_parser(parser):
         "--image",
         dest="docker_image",
         default=os.getenv("FCS_DEFAULT_IMAGE", "ncbi/fcs-gx:latest"),
-        help="Dockerhub registry path, or a filepath to Singularity .sif image. default=$FCS_DEFAULT_IMAGE",
+        help="Dockerhub registry path, or a filepath to container image. default=$FCS_DEFAULT_IMAGE",
+    )
+    
+    parser.add_argument(
+        "--container_platform",
+        choices=["docker", "singularity", "apptainer"],
+        help="Explicitly specify the container platform to use (docker, singularity, or apptainer)",
     )
 
     parser.add_argument(
